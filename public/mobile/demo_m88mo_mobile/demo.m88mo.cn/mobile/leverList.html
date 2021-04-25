@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<title>交易记录</title>
+	<link rel="stylesheet" type="text/css" href="css/common.css" />
+	<link rel="stylesheet" type="text/css" href="css/leverList.css" />
+	<script type="text/javascript" src="lib/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="javascripts/jquery.cookie.js"></script>
+	<script type="text/javascript" src="lib/layer_mobile/layer.js"></script>
+	<script src="lib/socket.io.js"></script>
+	<script type="text/javascript" src="javascripts/main.js"></script>
+	<script type="text/javascript" src="lib/vue.min.js"></script>
+	<script src="lib/jquery.localize.min.js"></script>
+	<script src="lib/language_cookie.js"></script>
+</head>
+
+<body class="bgColor">
+
+
+<!-- Copyright � 2005. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
+This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.3.1030</b></a> <a class="applink" href="http://www.spidersoft.com"><b>offline browser</b></a>  on  08/07/19 18:14:29.<br>
+<b>Address:</b> <a class="info" href="http://jyxt.ys.13mv.com/mobile/leverList.html">http://jyxt.ys.13mv.com/mobile/leverList.html</a><br>
+<b>Title:</b> 交易记录 &nbsp;&bull;&nbsp; <b>Size:</b> 14494 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Tue, 30 Jul 2019 02:30:27 GMT<br></div>
+<!-- /Copyright � 2005. Spidersoft Ltd -->
+
+
+	<div id="app" v-cloak class="bgColor">
+		<div class="tab-header bgColor">
+			<a class="back mt5" href="javascript:history.go(-1)"></a>
+			<div class="clearfix ftw">
+				<span :class="['fl',{'active':status==0}]" @click="tabSelect(0)" data-localize="deals.weing">委托中</span>
+				<span :class="['fl',{'active':status==1}]" @click="tabSelect(1)" data-localize="deals.tding">交易中</span>
+				<span :class="['fl',{'active':status==2}]" @click="tabSelect(2)" data-localize="deals.ping">平仓中</span>
+				<span :class="['fl',{'active':status==3}]" @click="tabSelect(3)" data-localize="deals.pied">已平仓</span>
+				<span :class="['fl',{'active':status==4}]" @click="tabSelect(4)" data-localize="deals.ceiled">已撤单</span>
+			</div>
+		</div>
+		<div class="header-space"></div>
+		<div class="content">
+			<ul class="list ftw bgColor">
+				<li v-for="item in tabList" class="bgColor pl10 pr10 mt10">
+					<div class="list-header bdt flex between">
+						<span>{{item.type == 1? 'buy':'sell'}} {{item.symbol}} x{{item.share}} (No.{{item.id}})</span>
+						<p>
+							<span :class="['red',{'green':item.profits > 0}]">{{item.profits || '0.0000' | toFixed4}}</span>
+							<span class="ftColor ml10">{{item.status_name}}</span>
+						</p>
+					</div>
+					<ul class="list-content mt10 pb10">
+						<li class="flex around">
+							<div class="tc" v-if="status==0 || status==4">
+								<p data-localize="deals.weprice">{{weprice}}</p>
+								<p class="ftColor mt5">{{item.origin_price || '0.0000' | toFixed4}}</p>
+							</div>
+							<div class="tc" v-else>
+								<p data-localize="deals.oprice">{{kaprice}}</p>
+								<p class="ftColor mt5">{{item.price || '0.0000' | toFixed4}}</p>
+							</div>
+							<div class="tc">
+								<p data-localize="deals.nowprice">{{tnowprice}}</p>
+								<p class="ftColor mt5 now">{{item.update_price || '0.0000' | toFixed4}}</p>
+							</div>
+							<div class="tc">
+								<p data-localize="deals.bond">{{bond}}</p>
+								<p class="ftColor mt5">{{item.origin_caution_money || '0.0000' | toFixed4}}</p>
+							</div>
+						</li>
+						<li class="flex around mt10">
+							<div class="tc">
+								<p data-localize="deals.zyprice">{{zprice}}</p>
+								<p class="ftColor mt5 ying">{{item.target_profit_price || '0.0000' | toFixed4}}</p>
+							</div>
+							<div class="tc">
+								<p data-localize="deals.zsprice">{{sprice}}</p>
+								<p class="ftColor mt5 zhi">{{item.stop_loss_price || '0.0000' | toFixed4}}</p>
+							</div>
+							<div class="tc">
+								<p data-localize="deals.canbond">{{canuse}}</p>
+								<p class="ftColor mt5 bao">{{item.caution_money || '0.0000' | toFixed4}}</p>
+							</div>
+						</li>
+						<li class="flex around mt10">
+							<div class="tc">
+								<p data-localize="deals.optime">{{optime}}</p>
+								<p class="ftColor mt5">{{item.time}}</p>
+							</div>
+							<div class="tc" v-if="item.handle_time">
+								<p data-localize="deals.pgtime">{{pitime}}</p>
+								<p class="ftColor mt5">{{item.handle_time}}</p>
+							</div>
+							<div class="tc">
+								<p data-localize="deals.znum">{{znum}}</p>
+								<p class="ftColor mt5">{{item.number || '0.0000' | toFixed4}}</p>
+							</div>
+							<div class="tc" v-if="!item.handle_time">
+								<p data-localize="deals.fee">{{fee}}</p>
+								<p class="ftColor mt5">{{item.trade_fee || '0.0000' | toFixed4}}</p>
+							</div>
+						</li>
+						<li class="flex around mt10">
+							<div class="tc" v-if="item.handle_time">
+								<p data-localize="deals.fee">{{fee}}</p>
+								<p class="ftColor mt5">{{item.trade_fee || '0.0000' | toFixed4}}</p>
+							</div>
+							<div class="tc">
+								<p data-localize="deals.gprice">{{gprice}}</p>
+								<p class="ftColor mt5">{{item.overnight_money || '0.0000' | toFixed4}}</p>
+							</div>
+							<div class="tc">
+							</div>
+							<div class="tc" v-if="!item.handle_time">
+							</div>
+						</li>
+						<li class="btns bdt" v-if="status == 0 || status == 1">
+							<button v-if="status == 1" type="button" @click="stopTrade(item.id)" data-localize="deals.pcang">{{pcang}}</button>
+							<button v-else type="button" @click="cannelTrade(item.id)" data-localize="deals.revoke">{{revoke}}</button>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<div class="no_record bgColor">
+				<img v-show="nodataShow" src="images/anonymous.png">
+				<p class="ftw" @click="moreLoad();">{{more}}</p>
+			</div>
+		</div>
+
+	</div>
+
+	<script>
+		var token = get_user_login();
+		var vue = new Vue({
+			el: '#app',
+			data: {
+				tabList: [],
+				detailList: [],
+				selectId: 0,
+				status: 0,
+				page: 1,
+				currencyId: get_param('currency_id') || '',
+				legalId: get_param('legal_id') || '',
+				more: '加载更多',
+				nodataShow: false,
+				leverName: get_param('symbol'),
+				inters: function () {},
+				buy:'买入',
+				sell:'卖出',
+				weprice:'委托价',
+				kaprice:'开仓价',
+				tnowprice:'当前价',
+				bond:'保证金',
+				zprice:'止盈价',
+				sprice:'止损价',
+				canuse:'可用保证金',
+				optime:'开仓时间',
+				pitime:'平仓时间',
+				znum:'折合数量',
+				fee:'手续费',
+				gprice:'隔夜费',
+				pcang:'平仓',
+				revoke:'撤单'
+
+			},
+			filters: {
+				toFixeds: function (value) {
+					value = Number(value);
+					return value.toFixed(2);
+				},
+				toFixed4: function (value, options) {
+					value = Number(value);
+					return value.toFixed(4);
+				}
+			},
+			mounted: function () {
+				let that = this;
+				that.more=more;
+				that.buy=buy;
+				that.sell=sell;
+				that.weprice=entrustPrice;
+				that.kaprice=oprice;
+				that.tnowprice=tnowprice;
+				that.bond=bond;
+				that.zprice=zyprice;
+				that.sprice=zsprice;
+				that.canuse=canbond;
+				that.optime=optime;
+				that.pitime=pgtime;
+				that.znum=znum;
+				that.fee=fee;
+				that.gprice=gprice;
+				that.pcang=pcang;
+				that.revoke=revoke;
+
+				that.init();
+				if (that.status == 0 || that.status == 1) {
+					that.getnew();
+					// that.inters = setInterval(function () {
+					// 	that.getnew();
+					// }, 2000)
+				}
+
+			},
+			methods: {
+				getnew() {
+					let that = this;
+					var token = get_user_login();
+					$.ajax({
+						url: _API + "user/info",
+						type: "GET",
+						dataType: "json",
+						async: true,
+						beforeSend: function beforeSend(request) {
+							request.setRequestHeader("Authorization", token);
+						},
+						success: function success(data) {
+							console.log(data);
+							if (data.type == 'ok') {
+								var socket = io(socket_api);
+								socket.emit('login', data.message.id);
+								// 后端推送来消息时
+								socket.on('lever_trade', function (msg) {
+									console.log(msg)
+									var lists = that.tabList;
+									if (msg.type == 'lever_trade') {
+										if (that.legalId != '') {
+											if (that.status == 0) {
+												var datas = msg.trades_entrust;
+												for (let i in lists) {
+													for (let j in datas) {
+														if (lists[i].id == datas[j].id) {
+															that.tabList[i].type = datas[j].type;
+															that.tabList[i].symbol = datas[j].symbol;
+															that.tabList[i].share = datas[j].share;
+															that.tabList[i].profits = datas[j].profits;
+															that.tabList[i].status_name = datas[j].status_name;
+															that.tabList[i].price = datas[j].price;
+															that.tabList[i].update_price = datas[j].update_price;
+															that.tabList[i].target_profit_price = datas[j].target_profit_price;
+															that.tabList[i].stop_loss_price = datas[j].stop_loss_price;
+															that.tabList[i].caution_money = datas[j].caution_money;
+															that.tabList[i].origin_caution_money = datas[j].origin_caution_money;
+															that.tabList[i].time = datas[j].time;
+															that.tabList[i].handle_time = datas[j].handle_time;
+															that.tabList[i].number = datas[j].number;
+															that.tabList[i].id = datas[j].id;
+														}
+													}
+												}
+											} else if (that.status == 1) {
+												var datas = msg.trades_all;
+												for (let i in lists) {
+													for (let j in datas) {
+														if (lists[i].id == datas[j].id) {
+															that.tabList[i].type = datas[j].type;
+															that.tabList[i].symbol = datas[j].symbol;
+															that.tabList[i].share = datas[j].share;
+															that.tabList[i].profits = datas[j].profits;
+															that.tabList[i].status_name = datas[j].status_name;
+															that.tabList[i].price = datas[j].price;
+															that.tabList[i].update_price = datas[j].update_price;
+															that.tabList[i].target_profit_price = datas[j].target_profit_price;
+															that.tabList[i].stop_loss_price = datas[j].stop_loss_price;
+															that.tabList[i].caution_money = datas[j].caution_money;
+															that.tabList[i].origin_caution_money = datas[j].origin_caution_money;
+															that.tabList[i].time = datas[j].time;
+															that.tabList[i].handle_time = datas[j].handle_time;
+															that.tabList[i].number = datas[j].number;
+															that.tabList[i].id = datas[j].id;
+														}
+													}
+												}
+											}
+
+										} else {
+											if (that.status == 0) {
+												var datas = msg.trades_entrust;
+												for (let i in datas) {
+													that.tabList[i].type = datas[i].type;
+													that.tabList[i].symbol = datas[i].symbol;
+													that.tabList[i].share = datas[i].share;
+													that.tabList[i].profits = datas[i].profits;
+													that.tabList[i].status_name = datas[i].status_name;
+													that.tabList[i].price = datas[i].price;
+													that.tabList[i].update_price = datas[i].update_price;
+													that.tabList[i].target_profit_price = datas[i].target_profit_price;
+													that.tabList[i].stop_loss_price = datas[i].stop_loss_price;
+													that.tabList[i].caution_money = datas[i].caution_money;
+													that.tabList[i].origin_caution_money = datas[i].origin_caution_money;
+													that.tabList[i].time = datas[i].time;
+													that.tabList[i].handle_time = datas[i].handle_time;
+													that.tabList[i].number = datas[i].number;
+													that.tabList[i].id = datas[i].id;
+												}
+											} else if (that.status == 1) {
+												var datas = msg.trades_all;
+												for (let i in datas) {
+													that.tabList[i].type = datas[i].type;
+													that.tabList[i].symbol = datas[i].symbol;
+													that.tabList[i].share = datas[i].share;
+													that.tabList[i].profits = datas[i].profits;
+													that.tabList[i].status_name = datas[i].status_name;
+													that.tabList[i].price = datas[i].price;
+													that.tabList[i].update_price = datas[i].update_price;
+													that.tabList[i].target_profit_price = datas[i].target_profit_price;
+													that.tabList[i].stop_loss_price = datas[i].stop_loss_price;
+													that.tabList[i].caution_money = datas[i].caution_money;
+													that.tabList[i].origin_caution_money = datas[i].origin_caution_money;
+													that.tabList[i].time = datas[i].time;
+													that.tabList[i].handle_time = datas[i].handle_time;
+													that.tabList[i].number = datas[i].number;
+													that.tabList[i].id = datas[i].id;
+												}
+											}
+										}
+
+									}
+
+								})
+							}
+						}
+					});
+				},
+				init() {
+					let that = this;
+					initDataTokens({
+						url: 'lever/my_trade',
+						type: 'post',
+						data: {
+							page: that.page,
+							status: that.status,
+							currency_id: that.currencyId,
+							legal_id: that.legalId,
+						}
+					}, that.currencyQuotationSuccess);
+				},
+				currencyQuotationSuccess(res) {
+					let that = this;
+					console.log(res);
+					if (res.type == 'ok') {
+						let datas = res.message.data;
+						if (datas.length > 0) {
+							that.nodataShow = false;
+							that.tabList = that.tabList.concat(datas);
+							that.more = more;
+						} else if (that.tabList.length == 0) {
+							that.more = nodata;
+							that.nodataShow = true;
+						} else {
+							that.nodataShow = false;
+							that.more = nomore
+						}
+					}
+
+				},
+				// 状态切换
+				tabSelect(value) {
+					let that = this;
+					that.status = value;
+					that.tabList = [];
+					that.page = 1;
+					that.init();
+				},
+				// 加载更多
+				moreLoad() {
+					let that = this;
+					that.page = that.page + 1;
+					that.init();
+				},
+				// 平仓
+				stopTrade(ids) {
+					layer.open({
+						anim: 'up',
+						content: sureClose,
+						btn: [sure, ceil],
+						yes: function (index) {
+							initDataTokens({
+								url: 'lever/close',
+								type: 'post',
+								data: {
+									id: ids
+								}
+							}, function (res) {
+								layer_msg(res.message)
+								setTimeout(function () {
+									window.location.reload();
+								}, 500)
+							})
+						}
+					});
+				},
+				// 撤单
+				cannelTrade(ids) {
+					let that = this;
+					layer.open({
+						anim: 'up',
+						content: revokeOrder,
+						btn: [sure, ceil],
+						yes: function (index) {
+							initDataTokens({
+								url: 'lever/cancel',
+								type: 'post',
+								data: {
+									id: ids
+								}
+							}, function (res) {
+								layer_msg(res.message)
+								setTimeout(function () {
+									that.tabSelect(that.status)
+								}, 500)
+							})
+						}
+					});
+				}
+			}
+		});
+	</script>
+</body>
+
+</html>

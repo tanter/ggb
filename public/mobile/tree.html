@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="../layui/css/layui.css">
+    <style>
+    .layui-tree li i,.layui-tree li a cite{color: #fff;}
+    .header{height: 48px;line-height: 48px;}
+    .topbox{padding: 10px;}
+    </style>
+</head>
+<body>
+
+
+<!-- Copyright � 2005. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
+This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.3.1030</b></a> <a class="applink" href="http://www.spidersoft.com"><b>offline browser</b></a>  on  08/07/19 18:14:29.<br>
+<b>Address:</b> <a class="info" href="http://jyxt.ys.13mv.com/mobile/tree.html">http://jyxt.ys.13mv.com/mobile/tree.html</a><br>
+<b>Title:</b> Document &nbsp;&bull;&nbsp; <b>Size:</b> 4346 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Tue, 30 Jul 2019 02:30:27 GMT<br></div>
+<!-- /Copyright � 2005. Spidersoft Ltd -->
+
+
+    <header class="header mainbg">
+        <a class="back mt5" href="javascript:history.go(-1)">
+            
+        </a>
+        <h4 class="ftw ft16">我的会员</h4>
+    </header>
+    <div class="header-space"></div>
+    <div class="pd50 white">
+        <div class="flex topbox">
+            <p>
+                <span>我的团队业绩：</span>
+                <span class="money">--</span>
+            </p>
+            <p class="ml10">
+                <span>团队人数(实名)：</span>
+                <span class="man">--</span>
+            </p>
+        </div>
+        <ul id="demo2"></ul>
+    </div>
+        
+    <script src="lib/jquery-2.1.1.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <script src="../layui/layui.all.js"></script>
+    <script src="javascripts/jquery.cookie.js"></script>
+    <script src="lib/layer_mobile/layer.js"></script> 
+
+    <script>
+    var token = get_user_login();
+    var user_id;
+    var date=[{"name":"我的会员","id":2}];
+    getinfo();
+    function getinfo(){
+        $.ajax({
+            url: _API + "user/info",
+            type: "GET",
+            dataType: "json",
+            async: true,
+            beforeSend: function beforeSend(request) {
+                request.setRequestHeader("Authorization", token);
+            },
+            success: function (res) {
+                if (res.type == 'ok') {
+                    user_id=res.message.id;
+                    layui.use(['tree'], function () {
+                        var list = {};
+                        $.ajax({
+                            url:_API + "getNode",
+                            type:'post',
+                            data:{user_id:user_id},
+                            dataType:'json',
+                            success:function (res) {
+                                //console.log(res);
+                                if (res.type=='ok'){
+                                    var list = res.message.results;
+                                    $('.money').html(res.message.show_message.top_upnumber)
+                                    $('.man').html(res.message.show_message.real_teamnumber)
+                                    render_tree(list);
+                                } else{
+                                    layer.msg(res.message);
+                                }
+                            }
+                        });
+
+                        function reload(data){
+                            $('#demo2').html('');
+                            render_tree(data);
+                        }
+
+                        function render_tree(data) {
+
+                            layui.tree({
+                                elem: '#demo2'
+                                , nodes: data
+                                , click: function (node) {
+                                    var self=this;
+                                    $.ajax({
+                                        url: _API + "getNode",
+                                        type: 'post',
+                                        data: {user_id: node.id},
+                                        dataType: 'json',
+                                        success: function (res) {
+                                            //console.log(res);
+                                            node.children = res.message.results;
+                                            node.spread = true;
+                                            reload(self.nodes);
+                                        }
+                                    });
+                                }
+                            });
+                        }
+                    });
+                } else {
+
+                }
+            }
+        });
+    }
+    window.onload = function() {
+        
+    }
+</script>
+</body>
+</html>

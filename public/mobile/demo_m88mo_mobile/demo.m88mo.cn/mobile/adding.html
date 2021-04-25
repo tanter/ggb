@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>添加方式</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<script src="../js/mobile-util.js"></script>
+		<script src="lib/jquery-2.1.1.min.js"></script>
+		<script src="lib/swiper.jquery.min.js"></script>
+		<script src="javascripts/main.js"></script>
+		<script src="javascripts/jquery.cookie.js"></script>
+		<script src="lib/vue.min.js"></script>
+		<script src="lib/layer_mobile/layer.js"></script>
+		<script src="lib/jquery.localize.min.js"></script>
+	    <script src="lib/language_cookie.js"></script>
+	</head>
+	<body>
+
+
+<!-- Copyright � 2005. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
+This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.3.1030</b></a> <a class="applink" href="http://www.spidersoft.com"><b>offline browser</b></a>  on  08/07/19 18:14:29.<br>
+<b>Address:</b> <a class="info" href="http://jyxt.ys.13mv.com/mobile/adding.html">http://jyxt.ys.13mv.com/mobile/adding.html</a><br>
+<b>Title:</b> 添加方式 &nbsp;&bull;&nbsp; <b>Size:</b> 5353 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Tue, 30 Jul 2019 02:30:27 GMT<br></div>
+<!-- /Copyright � 2005. Spidersoft Ltd -->
+
+
+		<div id="app" v-cloak>
+			<header class="header">
+				<a class="back mt5" href="javascript:history.go(-1)">
+				</a>
+				<h4 class="ftw ft16" data-localize="met.add">添加方式</h4>
+			</header>
+			<div class="header-space"></div>
+			<ul class="nav receivables ftw ml15 mr10">
+				<li>
+					<p class="title ft16" data-localize="met.open">开户行名称</p>
+					<div class="clearfix">
+						<img src="images/bank-name.png" alt="">
+						<input class="ftw" id="yinhang" type="text" placeholder="请输入开户行名称" data-localize="met.popen">
+					</div>
+				</li>
+				<li>
+					<p class="title ft16" data-localize="met.bank">银行账号</p>
+					<div class="clearfix">
+						<img src="images/bank.png" alt="">
+						<input class="ftw" id="yinHu" type="text" placeholder="请输入开户行账号" data-localize="met.pbank">
+					</div>
+				</li>
+				<li>
+					<p class="title ft16" data-localize="met.realname">真实名字</p>
+					<div class="clearfix">
+						<img src="images/user-icon.png" alt="">
+						<input class="ftw" id="name" type="text" placeholder="请输入真实姓名" data-localize="met.pname">
+					</div>
+				</li>
+				<li>
+					<p class="title ft16" data-localize="met.alipay">支付宝账号</p>
+					<div class="clearfix">
+						<img src="images/alipay-icon.png" alt="">
+						<input class="ftw" id="zfb" type="text" placeholder="请输入支付宝账号" data-localize="met.palipay">
+					</div>
+				</li>
+				<li>
+					<p class="title ft16" data-localize="met.wename">微信昵称</p>
+					<div class="clearfix">
+						<img src="images/wechat-icon.png" alt="">
+						<input class="ftw" id="wxname" type="text" placeholder="请输入微信昵称" data-localize="met.pwename">
+					</div>
+				</li>
+				<li>
+					<p class="title ft16" data-localize="met.wechat">微信账号</p>
+					<div class="clearfix">
+						<img src="images/wechat-icon.png" alt="">
+						<input class="ftw" id="wxzhanghu" type="text" placeholder="请输入微信账号" data-localize="met.pweaccount">
+					</div>
+				</li>
+			</ul>
+			<!-- 保存按钮 -->
+			<div class="save ft15 ftw">
+				<button class="ftw" type="button" @click="add()" data-localize="met.save">保存</button>
+			</div>
+		</div>
+	</body>
+</html>
+<script>
+	$('input[type=text]').blur(function(){
+		setTimeout(function(){
+			document.body.scrollTop = document.body.scrollHeight;
+		},300);
+	})
+	var vue = new Vue({
+		el: '#app',
+		data: {
+			List: []
+		},
+		mounted: function() {
+			var self = this;
+			var token = get_user_login();
+			$.ajax({
+				url: _API + "user/cash_info",
+				type: "POST",
+				dataType: "json",
+				async: true,
+				data: {},
+				beforeSend: function beforeSend(request) {
+					request.setRequestHeader("Authorization", token);
+				},
+				success: function success(data) {
+					console.log(data)
+					if (data.type == 'ok') {
+						var data = data.message;
+						$("#name").attr("value", data.real_name);
+						$("#yinhang").attr("value", data.bank_name);
+						$("#yinHu").attr("value", data.bank_account);
+						$("#zfb").attr("value", data.alipay_account);
+						$("#wxname").attr("value", data.wechat_nickname);
+						$("#wxzhanghu").attr("value", data.wechat_account);
+					} else {
+						layer_msg(data.message);
+					};
+					if (data.type == '999') {
+						window.location = _SERVER + 'login.html';
+					}
+				}
+			});
+		},
+		methods: {
+			//跳详情
+			particulars: function(id) {
+				window.location = _SERVER + 'Transferred.html?Id=' + id;
+			},
+			add: function() {
+				var self = this;
+				var token = get_user_login();
+				var name = $("#name").val();
+				var yinhang = $("#yinhang").val();
+				var yinHu = $("#yinHu").val();
+				var zfb = $("#zfb").val();
+				var wxname = $("#wxname").val();
+				var wxzhanghu = $("#wxzhanghu").val();
+				$.ajax({
+					url: _API + "user/cash_save",
+					type: "POST",
+					dataType: "json",
+					async: true,
+					data: {
+						real_name: name,
+						bank_name: yinhang,
+						bank_account: yinHu,
+						alipay_account: zfb,
+						wechat_nickname: wxname,
+						wechat_account: wxzhanghu
+					},
+					beforeSend: function beforeSend(request) {
+						request.setRequestHeader("Authorization", token);
+					},
+					success: function success(data) {
+						console.log(data)
+						self.List = data.message;
+						if (data.type == 'ok') {
+							layer_confirm2(data.message, function() {
+								window.history.go(-1);
+							})
+						} else {
+							layer_msg(data.message);
+						}
+						if (data.type == '999') {
+							window.location = 'login.html';
+						}
+					}
+				});
+			}
+		}
+	});
+</script>

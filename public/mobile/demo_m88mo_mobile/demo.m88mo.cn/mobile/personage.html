@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>个人中心</title>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<script src="../js/mobile-util.js"></script>
+		<script src="lib/jquery-2.1.1.min.js"></script>
+		<script src="javascripts/main.js"></script>
+		<script src="javascripts/jquery.cookie.js"></script>
+		<script src="lib/vue.min.js"></script>
+		<script src="lib/layer_mobile/layer.js"></script>
+		<script src="lib/jquery.localize.min.js"></script>
+		<script src="lib/language_cookie.js"></script>
+	</head>
+	<body>
+
+
+<!-- Copyright � 2005. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
+This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.3.1030</b></a> <a class="applink" href="http://www.spidersoft.com"><b>offline browser</b></a>  on  08/07/19 18:14:29.<br>
+<b>Address:</b> <a class="info" href="http://jyxt.ys.13mv.com/mobile/personage.html">http://jyxt.ys.13mv.com/mobile/personage.html</a><br>
+<b>Title:</b> 个人中心 &nbsp;&bull;&nbsp; <b>Size:</b> 3097 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Tue, 30 Jul 2019 02:30:27 GMT<br></div>
+<!-- /Copyright � 2005. Spidersoft Ltd -->
+
+
+		<div id="app" v-cloak>
+			<header class="header">
+				<a class="back mt5" href="javascript:history.go(-1)">
+					
+				</a>
+				<h4 class="ftw ft16" data-localize="index.usercenter">个人中心</h4>
+			</header>
+			<div class="header-space"></div>
+			<div class="aaa ftw ft14">
+				<h3 class="bdt ptb10 pb10 pl12 clearfix">
+					<span data-localize="auth.test">身份验证</span> 
+					<span v-show="List.review_status==0" @click="aa()" class="fr ftColor" data-localize="auth.gotest">去认证</span>
+					<span v-show="List.review_status==1" class="fr ftColor" data-localize="auth.testing">审核中</span>
+					<span v-show="List.review_status==2" class="fr ftColor" data-localize="auth.tested">已认证</span>
+				</h3>
+				<ul class="ml12">
+					<li class="mt15" v-show="List.review_status==0">·&nbsp;<span data-localize="auth.t1">认证后可提升提币额度</span> </li>
+					<li class="mt15" v-show="List.review_status==0">·&nbsp;<span data-localize="auth.t2">认证后可进行c2c交易</span> </li>
+					<li class="mt15" v-show="List.review_status==1">·&nbsp; <span data-localize="auth.t3">认证后可进行法币交易</span> </li>
+					<li class="mt15" v-show="List.review_status==2"><span data-localize="auth.name">姓名</span>  <span>{{List.name}}</span></li>
+					<li class="mt15" v-show="List.review_status==2"><span data-localize="auth.account">账户</span> <span>{{List.account}}</span></li>
+					<li class="mt15" v-show="List.review_status==2"><span>UID</span> <span>{{List.id}}</span></li>
+					<li class="mt15" v-show="List.review_status==2"><span data-localize="auth.number">证件号码</span> <span>{{List.card_id}}</span></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
+<script>
+	var vue = new Vue({
+		el: '#app',
+		data: {
+			List: []
+		},
+		mounted: function() {
+			var self = this;
+			var token = get_user_login();
+			$.ajax({
+				url: _API + "user/center",
+				type: "GET",
+				dataType: "json",
+				async: true,
+				beforeSend: function beforeSend(request) {
+					request.setRequestHeader("Authorization", token);
+				},
+				success: function success(data) {
+					console.log(data)
+					self.List = data.message;
+					if (data.type == 'ok') {
+
+					} else if (data.type == '999') {
+						window.location = _SERVER + 'login.html';
+					}
+				}
+			});
+		},
+		methods: {
+			aa: function() {
+				window.location = _SERVER + 'authentication.html';
+			}
+		}
+	});
+</script>

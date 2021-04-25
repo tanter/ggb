@@ -1,0 +1,14 @@
+http://jyxt.ys.13mv.com/layui/font/iconfont.eot?v=250	iconfont.eot~v=250.eot
+http://jyxt.ys.13mv.com/layui/font/iconfont.svg?v=250	iconfont.svg~v=250.svg
+http://jyxt.ys.13mv.com/layui/font/iconfont.ttf?v=250	iconfont.ttf~v=250.ttf
+http://jyxt.ys.13mv.com/layui/font/iconfont.woff?v=250	iconfont.woff~v=250.woff
+http://jyxt.ys.13mv.com/layui/font/iconfont.woff2?v=250	iconfont.woff2~v=250.woff2
+http://jyxt.ys.13mv.com/mobile/assets.html?type=deal	assets.html~type=deal.html
+http://jyxt.ys.13mv.com/mobile/assets.html?type=legal	assets.html~type=legal.html
+http://jyxt.ys.13mv.com/mobile/assets.html?type=trade	assets.html~type=trade.html
+http://jyxt.ys.13mv.com/mobile/c2c/fiatrad_detail.html?id=	fiatrad_detail.html~id=.html
+http://jyxt.ys.13mv.com/mobile/c2c/fiatrad_detail_fabu.html?id=	fiatrad_detail_fabu.html~id=.html
+http://jyxt.ys.13mv.com/mobile/c2c/fiatrad_pay.html?id=	fiatrad_pay.html~id=.html
+http://jyxt.ys.13mv.com/mobile/c2c/fiatrad_pay_cancel_buy.html?id=	fiatrad_pay_cancel_buy.html~id=.html
+http://jyxt.ys.13mv.com/mobile/c2c/shop_fiatrad_detail.html?id=	shop_fiatrad_detail.html~id=.html
+http://jyxt.ys.13mv.com/mobile/forgetpass.html?type=1	forgetpass.html~type=1.html

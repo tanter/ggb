@@ -1,0 +1,4 @@
+<?php
+//000000000600
+ exit();?>
+{"user":{"theader":["\u4f1a\u5458\u7c7b\u578b","\u7d2f\u8ba1","\u6628\u65e5\u65b0\u589e","\u4eca\u65e5\u65b0\u589e"],"tbody":[["\u6ce8\u518c\u7528\u6237",15,0,0],["\u5b9e\u540d\u7528\u6237",0,0,0]]},"currency":{"title":"\u5408\u7ea6\u4ea4\u6613","theader":[{"title":"\u5408\u7ea6\u5e01\u4ea4\u6613\u603b\u91cf","value":36406.080327920004,"class":"red"},{"title":"\u603b\u4ea4\u6613\u989d","value":3275715.8969501015,"class":"green"},{"title":"\u603b\u624b\u7eed\u8d39","value":10425.421795109993,"class":"blue"}],"tbody":[["\u6628\u65e5\u4ea4\u6613\u91cf 0","\u6628\u65e5\u624b\u7eed\u8d39 0","\u4eca\u65e5\u4ea4\u6613\u91cf 0","\u4eca\u65e5\u624b\u7eed\u8d39 0"]]}}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>通证兑换USDT</title>
+    <link rel="stylesheet" href="css/common.css">
+    <style>
+        .mainbox{padding: 10px;}
+        .topbox{height: 100px;border-radius: 5px;padding-left: 15px;background-image: linear-gradient(90deg, #5887D3,#6696E5);}
+        .less{padding-top: 10px;}
+        .number{font-size: 24px;}
+        .numbox{width: 100%;padding: 0 10px;border-radius: 4px;}
+        .numbers{height: 50px;}
+        .submit{width:100%;height: 40px;border-radius: 4px;background:#5887D3;margin-top: 80px;}
+        .go{position: absolute;right: 12px;display: block;top: 0px;}
+    </style>
+</head>
+<body>
+
+
+<!-- Copyright � 2005. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
+This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.3.1030</b></a> <a class="applink" href="http://www.spidersoft.com"><b>offline browser</b></a>  on  08/07/19 18:14:29.<br>
+<b>Address:</b> <a class="info" href="http://jyxt.ys.13mv.com/mobile/sweet.html">http://jyxt.ys.13mv.com/mobile/sweet.html</a><br>
+<b>Title:</b> 通证兑换USDT &nbsp;&bull;&nbsp; <b>Size:</b> 3673 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Tue, 30 Jul 2019 02:30:27 GMT<br></div>
+<!-- /Copyright � 2005. Spidersoft Ltd -->
+
+
+    <header class="header header40 mainbg">
+        <a class="back" href="javascript:;" onclick="javascript:history.go(-1);"></a> 
+        <div class="tc title white">通证兑换USDT</div>  
+        <a href="sweet_record.html" class="white go">兑换记录</a> 
+    </header>
+    <div class="header-space"></div>
+    <div class="mainbox">
+        <div class="topbox white">
+            <div>
+                <p class="less">剩余通证</p>
+                <p class="mt10 ft18 number">--</p>
+            </div>
+        </div>
+        <div class="numbox flex alcenter mainbg mt15 white">
+            <span class="exnum">兑换数量：</span>
+            <input type="number" class="flex1 pl10 numbers" placeholder="请输入兑换数量">
+        </div>
+
+        <input type="button" value="兑换" class="white submit">
+
+    </div>
+    <script src="lib/jquery-2.1.1.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <script src="javascripts/jquery.cookie.js"></script>
+    <script src="lib/layer_mobile/layer.js"></script>
+    <script>
+        var token = get_user_login();
+        var number=0;
+        getnum();
+        function getnum(){
+            $.ajax({
+                url: _API + "user/info",
+                type: "GET",
+                dataType: "json",
+                async: true,
+                beforeSend: function beforeSend(request) {
+                    request.setRequestHeader("Authorization", token);
+                },
+                success: function (res) {
+                    if (res.type == 'ok') {
+                        $('.number').text(res.message.candy_number);
+                        number=res.message.candy_number-0;
+                    } else {
+                    }
+                }
+            });
+        }
+        $('.submit').click(function(){
+            var numbers = $('.numbers').val();
+            if(numbers==''||numbers<=0){
+              return layer_msg('请输入兑换数量');
+            }
+            if(numbers>number){
+              return layer_msg('兑换数量大于剩余数量'); 
+            }
+            $.ajax({
+                type: 'POST',
+                url: _API + 'candy/candy_tousdt',
+                dataType: 'json',
+                data: {
+                    candy_number:numbers,
+                },
+                beforeSend: function beforeSend(request) {
+                    request.setRequestHeader("Authorization", token);
+                },
+                success: function (res) {
+                    if (res.type == 'ok') {
+                        layer_msg(res.message);
+                        $('.numbers').val('');
+                        getnum();
+                    } else {
+                        layer_msg(res.message);
+                    }
+                }
+            });
+        })
+        
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>绑定提币地址</title>
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<style>
+.bline{border-bottom: 1px solid #1B2A3E;padding: 10px 0;}
+.mt30{margin-top: 30px}
+.color1b{color: #728daf}
+.mention{width: 100%;height: 40px;line-height: 40px;color: #fff;background: #1881d2;border-radius: 4px;}
+.addbox img{width: 20px;}
+.addbox span{padding: 0 5px}
+input{background-color: rgba(0,0,0,0);}
+.sel{
+    background: #061623;
+    border: none;
+    color: #eee;
+    border: 1px solid #224055;
+    padding: 5px 30px;
+    width: 50%;
+    appearance: inherit;
+    -webkit-appearance:inherit;
+}
+.address{
+    width: 75%;
+}
+.ptb5{
+    padding: 5px 0px;
+    box-sizing: border-box;
+}
+.getCode{
+    width: 80px;
+}
+</style>
+<script>
+    function code(result){
+        $(".address").val(result)
+    } 
+</script>
+<body>
+
+
+<!-- Copyright � 2005. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
+This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.3.1030</b></a> <a class="applink" href="http://www.spidersoft.com"><b>offline browser</b></a>  on  08/07/19 18:14:29.<br>
+<b>Address:</b> <a class="info" href="http://jyxt.ys.13mv.com/mobile/bindAddress.html">http://jyxt.ys.13mv.com/mobile/bindAddress.html</a><br>
+<b>Title:</b> 绑定提币地址 &nbsp;&bull;&nbsp; <b>Size:</b> 8080 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Tue, 30 Jul 2019 02:30:27 GMT<br></div>
+<!-- /Copyright � 2005. Spidersoft Ltd -->
+
+
+		<header class="header">
+			<a class="back mt5" href="javascript:history.go(-1)">
+				
+			</a>
+			<h4 class="ftw ft16 bodyColor" data-localize="">绑定提币地址</h4>
+		</header>
+		<div class="header-space"></div>
+    <div class="plr15 ft14 ftw ptb10">
+       <div class="flex alcenter center">
+           <span class="w30">币 种:</span>
+           <select class="sel radius4"> 
+               <option>BTC</option>
+           </select>
+       </div>
+       <div class="mt20 flex alcenter">
+           <span class="w30">提币地址：</span>
+           <input class="address bdb ptb10" placeholder="请输入提币地址" type="text">
+       </div>
+       <div class="mt20 flex alcenter">
+            <span class="w30">验证码：</span>
+            <div class="bdb ptb10 flex alcenter between">
+            <input class="code" placeholder="请输入验证码" type="text">
+            <button class="btn-default btnbg ptb5 radius4 white getCode">获取验证码</button>
+        </div>
+        </div>
+        <div class="w100 btnbg ptb10 radius4 tc ft14 mt40 confirm">确认绑定</div>
+    </div>
+    <script src="lib/jquery-2.1.1.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <script src="javascripts/jquery.cookie.js"></script>
+    <script src="lib/layer_mobile/layer.js"></script>
+    <script src="lib/jquery.localize.min.js"></script>
+    <script src="lib/language_cookie.js"></script>
+    <script src="js/md5.js"></script>
+    <script>
+        $(function () {
+            var token = get_user_login();
+            //获取user_id
+            var user_id;
+            $.ajax({
+                    url: _API + "user/info",
+                    type: "GET",
+                    dataType: "json",
+                    async: true,
+                    data:{
+                       
+                    },
+                    beforeSend: function beforeSend(request) {
+						request.setRequestHeader("Authorization",token);
+					},
+                    success: function (res) {
+                        if(res.type == 'ok'){
+                            user_id = res.message.id;
+                            getAddress();
+                        }
+                    }
+                });
+            //获取币种列表
+            $.ajax({
+                    url: _API + "wallet/list",
+                    type: "POST",
+                    dataType: "json",
+                    async: true,
+                    data:{
+                       
+                    },
+                    beforeSend: function beforeSend(request) {
+						request.setRequestHeader("Authorization",token);
+					},
+                    success: function (res) {
+                        console.log(res);
+                        var list = res.message.legal_wallet.balance;
+                        var html = '';
+                        $.each(list,function(k,v){
+                            html+= `
+                              <option value='${v.currency_name}'>${v.currency_name}</option>
+                            ` 
+                        });
+                        $('.sel').html(html);
+                    }
+                });
+            $('.confirm').click(function(){
+                var coin_name = $('.sel').val();
+                var address = $('.address').val();
+                var code = $('.code').val();
+                if(!address){
+                    layer_msg('请输入提币地址');
+                    return;
+                };
+                if(!code){
+                    layer_msg('请输入验证码');
+                    return;
+                };
+            //绑定
+               var obj = {
+                        user_id:user_id,
+                        address:address,
+                        coin_name:coin_name,
+                        contract_address:'',
+                        verificationcode:code,
+                        t:Date.parse(new Date())/1000,
+                    };
+                var obj_str = JSON.stringify(obj);
+                console.log(obj_str);
+                console.log($.md5(obj_str+'abcd4321'))
+                $.ajax({
+                    url: '/walletMiddle/BindDrawAddress',
+                    type: "POST",
+                    dataType: "json",
+                    async: true,
+                    data:{
+                        data:obj_str,
+                        sign: $.md5(obj_str+'abcd4321')
+                    },
+                    success: function (res) {
+                        if(res.code == 0){
+                            layer_msg('绑定成功');
+                            $('.address').val('');
+                            $('.code').val('');
+                        }else{
+                            layer_msg(res.msg)
+                        }
+                    }
+                });
+            });
+            //获取验证码
+            $('.getCode').click(function(){
+                
+                $.ajax({
+                    url: '/walletMiddle/SendVerificationcode?user_id='+user_id,
+                    type: "GET",
+                    dataType: "json",
+                    async: true,
+                    params:{
+                       
+                    },
+                    success: function (res) {
+                        console.log(res);                    
+                        if(res.code == 0){
+                            layer_msg('发送成功');
+                                    var times = 30
+                        var timer = setInterval(() => {
+                            times--;
+                            $('.getCode').text(times+'s');
+                            $('.getCode').attr('disabled',true);
+                            if(times<=0){
+                                clearInterval(timer);
+                                $('.getCode').text('获取验证码');
+                                $('.getCode').removeAttr('disabled');
+                            }
+                        }, 1000);
+                        }else{
+                            layer_msg(res.msg)
+                        }
+                    }
+                })
+            });
+            //获取提币地址
+            function getAddress(){
+                $.ajax({
+                    url: '/walletMiddle/GetDrawAddress',
+                    type: "GET",
+                    dataType: "json",
+                    async: true,
+                    data:{
+                        user_id:user_id,
+                        coin_name:$('.sel').val(),
+                        contract_addres:''
+                    },
+                    success: function (res) {
+                        if(res.code == 0){
+                            $('.address').val(res.data.address);
+                        }else{
+                            
+                        }
+                    }
+                });
+            };
+            $('.sel').change(function(){
+                $('.address').val('');
+                getAddress();
+            })
+           
+        })
+    </script>
+</body>
+
+</html>

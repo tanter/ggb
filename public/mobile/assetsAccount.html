@@ -1,0 +1,151 @@
+<html><head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+  <meta name="format-detection" content="telephone=no">
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <link rel="stylesheet" type="text/css" href="css/global.css">
+  <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <style>
+    section li {
+      padding: 5px 10px;
+      margin-bottom: 10px;
+    }
+
+    /* section li a>div{padding: 10px 0;} */
+    .swiper-container {
+      width: 100%;
+    }
+
+    header {
+      height: 35px;
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      width: 100%;
+      background: #122441;
+      border-bottom: 1px solid #2b3d5a;
+    }
+
+    .header-scroll {
+      box-shadow: 0 2px 2px #999
+    }
+
+    header img {
+      width: 24px;
+      height: 24px;
+      float: left;
+      margin-left: 10px;
+      margin-top: 5px;
+    }
+
+    header a {
+      position: absolute;
+    }
+
+    header span {
+      line-height: 35px;
+      margin: 0 10px;
+      color: #758a8f;
+      padding-bottom: 4px;
+    }
+
+    header .active {
+      font-weight: bold;
+      color: #fff;
+      /* border-bottom: 1px solid #D26229; */
+    }
+
+    li a {
+      color: inherit;
+      display: block;
+      border: 1px solid #11283c;
+      padding: 10px;
+      background: #121f2f;
+      border-radius: 4px;
+    }
+
+    li a .flex1>p {
+      font-size: 14px;
+    }
+
+    .swiper-slide {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .agent_level {
+      width: 100%;
+    }
+    .total-btn{
+        width: 100px;
+        border-radius: 4px;
+        outline: none;
+        border: 1px solid #1881d2;
+        line-height: 30px;
+        background-color: #1881d2;
+        color: #fff;
+        margin-top: 10px;
+        margin-left:2%;
+        margin-right:2%;
+    }
+  </style>
+<link href="http://www.blesintex.com/mobile/lib/layer_mobile/need/layer.css?2.0" type="text/css" rel="styleSheet" id="layermcss"></head>
+
+<body>
+  <div id="app"><section class="swiper-container mycontainer swiper-container-horizontal swiper-container-ios"><section class="swiper-wrapper" style="transform: translate3d(0px, 0px, 0px);"><section class="swiper-slide swiper-slide-active"><section class="agent_level"><section class="levelbox level01"><div class="white flex between alcenter"><div><span data-localize="assets.total" class="ft12">总资产折合（USDT）</span></div> <img src="images/shows.png" alt=""></div> <p class="mt20 deal_total">0.00</p></section></section></section></section><span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></section> <section class="level_con" style="padding-bottom: 50px;"><section><ul class="deal_lists"><li><a href="javascript:;"><p class="flex between"><span class="blue bold">BTC</span> <span class="blue bold copy">复制</span></p> <p class="flex between"><span class="blue2">地址:1JR8XpPe7ugFG8wCLgRVnCMeV7Q6wtKRF3</span></p> <div class="flex"><div class="flex1"><span class="ft12 blue2">可用</span> <p class="ftw"><span>0.0000</span></p></div> <div class="flex1 tc"><span data-localize="assets.lock" class="ft12 blue2">冻结</span> <p class="ftw"><span> 0.0000</span></p></div> <div class="flex1 tr"><span data-localize="assets.conversion" class="ft12 blue2">折合</span> <p class="white_gray"><span>0.0000</span></p></div></div></a></li></ul></section></section> <div style="display: flex; justify-content: space-around;"><button type="button" data-localize="ads.adds" class="fr total-btn">添加地址</button> <button type="button" data-localize="assets.cmoney" class="fr total-btn">充币</button> <button type="button" data-localize="assets.tmoney" class="fr total-btn">提币</button> <!----></div> <ul style="padding: 26px; color: rgb(99, 112, 133);"><li style="list-style: circle;">请勿向上述地址充值任何非本币种的资产，否则资产将不可找回。</li><li style="list-style: circle;">币种充值仅支持OMNI链型，使用其它方法（send all)的充币暂时无法上账，请您见谅。</li><li style="list-style: circle;">充币后请保存充币完成截图，并上传至本平台，作为凭证。</li></ul></div>
+  <footer>
+    <a href="index.html">
+      <div>
+        <p class="img img0"></p>
+        <span data-localize="footer.home">首页</span>
+      </div>
+    </a>
+    <a href="market.html">
+      <div>
+        <p class="img img1"></p>
+        <span data-localize="footer.quotation">行情</span>
+      </div>
+    </a>
+    <!-- <a href="fiatrad.html">
+				<div>
+						<p class="img img2"></p>
+						<span>法币交易</span>
+				</div>
+				</a> -->
+    <a href="transaction.html">
+      <div>
+        <p class="img img2"></p>
+        <span data-localize="footer.currency">币币交易</span>
+      </div>
+    </a>
+    <a href="LeveragedDeals.html">
+      <div>
+        <p class="img img3"></p>
+        <span data-localize="footer.lever">合约交易</span>
+      </div>
+    </a>
+    <a href="assets.html" class="select">
+      <div>
+        <p class="img img4"></p>
+        <span data-localize="footer.assets">资产</span>
+      </div>
+    </a>
+  </footer>
+
+
+
+
+<script src="lib/jquery-1.8.3.min.js"></script>
+<script src="lib/swiper.min.js"></script>
+<script src="javascripts/jquery.cookie.js"></script>
+<script src="lib/layer_mobile/layer.js"></script>
+<script src="javascripts/jquery.cookie.js"></script>
+<script src="lib/jquery.localize.min.js"></script>
+<script src="lib/language_cookie.js"></script>
+<script src="lib/vue.min.js"></script>
+<script src="javascripts/main.js"></script>
+<script src="javascripts/clipboard.min.js"></script>
+<script src="javascripts/assetsAccount.js"></script></body></html>

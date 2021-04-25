@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>测试</title>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.4.0.js"></script>
+<script>
+  (function(window){
+    var jsApiList = '{$config["jsApiList"]}';
+    if(!window)window = {};
+    if(!window.wx_api) window.wx_api = {};
+    wx.config({
+        debug: false, // 开启调试模式,调用的所有api的返回值会在客户端alert出来，若要查看传入的参数，可以在pc端打开，参数信息会通过log打出，仅在pc端时才会打印。
+        appId: '{$config["appId"]}', // 必填，公众号的唯一标识
+        timestamp: '{$config["timestamp"]}', // 必填，生成签名的时间戳
+        nonceStr: '{$config["nonceStr"]}', // 必填，生成签名的随机串
+        signature: '{$config["signature"]}',// 必填，签名
+        jsApiList:  jsApiList.split(',') // 必填，需要使用的JS接口列表
+    });
+    var __undefined = void(0);
+    var __is_undefined = function(p){
+      return p === __undefined ? true : false;
+    }
+    window.wx_api.getShareTitle = function(title){
+      return __is_undefined(title) ? '{$share["share_title"]}' : title;
+    };
+    window.wx_api.getShareDesc = function(desc){
+      return __is_undefined(desc) ? '{$share["share_des"]}' : desc;
+    }
+    window.wx_api.getShareLink = function(link){
+      return __is_undefined(link) ? '{$share["share_link"]}' : link;
+    }
+    window.wx_api.getShareImg = function(imgUrl){
+      return __is_undefined(imgUrl) ?　'{$share["share_img"]}' : imgUrl;
+    };
+
+    wx.ready(function(){
+      console.log('ready...');
+      window.wx_api.shareBtn = function(title, link, desc, imgUrl, callback) {
+        WeixinJSBridge.invoke('shareTimeline', {
+          title: window.wx_api.getShareTitle(title),
+          link: window.wx_api.getShareTitle(link),
+          desc: window.wx_api.getShareTitle(desc),
+          img_url: window.wx_api.getShareTitle(imgUrl),
+          success: function() {
+            callback && callback()
+          }
+        });
+      }
+
+      //自定义“分享给朋友”及“分享到QQ”按钮的分享内容
+      window.wx_api.shareApp = function(title, desc, link, imgUrl, callback){
+        wx.onMenuShareAppMessage({
+          title: window.wx_api.getShareTitle(title), // 分享标题
+          desc: window.wx_api.getShareTitle(desc), // 分享描述
+          link:  window.wx_api.getShareTitle(link), // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+          imgUrl: window.wx_api.getShareTitle(imgUrl), // 分享图标
+          //type: 'link', // 分享类型,music、video或link，不填默认为link
+          //dataUrl: '', // 如果type是music或video，则要提供数据链接，默认为空
+          success: function () {
+            callback && callback()
+          }
+        });
+      }
+      window.wx_api.shareApp();
+      //自定义“分享到朋友圈”及“分享到QQ空间”按钮的分享内容（1.4.0）
+      window.wx_api.shareTime = function(title, link, imgUrl, callback){
+        wx.onMenuShareTimeline({
+            title: window.wx_api.getShareTitle(title), // 分享标题
+            link: window.wx_api.getShareTitle(link), // 分享链接，该链接域名或路径必须与当前页面对应的公众号JS安全域名一致
+            imgUrl: window.wx_api.getShareTitle(imgUrl), // 分享图标
+            success: function () {
+              // 用户点击了分享后执行的回调函数
+              callback&&callback()
+            }
+        })
+      }
+      window.wx_api.shareTime();
+    wx.error(function(res){
+      console.log('error...')
+    });
+  })(window);
+  function upload(){
+    window.wx_api.chooseImage();
+  }
+</script>
+</head>
+<body>
+  <duv onclick="upload()" style="font-size:100px;">点击</div>
+</body>
+</html>

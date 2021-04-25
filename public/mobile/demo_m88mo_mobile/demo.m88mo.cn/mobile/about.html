@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>关于我们</title>
+		<!-- css引入 -->
+		<link rel="stylesheet" type="text/css" href="lib/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<!-- js引入 -->
+		<script src="../js/mobile-util.js"></script>
+		<script src="lib/layer_mobile/layer.js"></script>
+		<script src="lib/jquery-2.1.1.min.js"></script>
+		<script src="javascripts/main.js"></script>
+		<script src="javascripts/about.js"></script>
+		<script src="lib/jquery.localize.min.js"></script>
+	    <script src="lib/language_cookie.js"></script>
+	</head>
+	<body>
+
+
+<!-- Copyright � 2005. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
+This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.3.1030</b></a> <a class="applink" href="http://www.spidersoft.com"><b>offline browser</b></a>  on  08/07/19 18:14:29.<br>
+<b>Address:</b> <a class="info" href="http://jyxt.ys.13mv.com/mobile/about.html">http://jyxt.ys.13mv.com/mobile/about.html</a><br>
+<b>Title:</b> 关于我们 &nbsp;&bull;&nbsp; <b>Size:</b> 1937 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Tue, 30 Jul 2019 02:30:27 GMT<br></div>
+<!-- /Copyright � 2005. Spidersoft Ltd -->
+
+
+		<header class="header">
+			<a class="back" href="javascript:history.go(-1)">
+			</a>
+			<h4 class="ftw ft16" data-localize="index.aboutus">关于我们</h4>
+		</header>
+		<div class="header-space"></div>
+		<div class="nav about-list">
+			<ul class="ftw ft14">
+				<li class="relation ptb15 pb15 bdt pl12 clearfix">
+					<span data-localize="call.callme">联系我们 </span> 
+					<a href="" class="tel fr">demobeau@hotmail.com</a>
+				</li>
+				<li class="policy ptb15 pb15 bdt pl12 clearfix">
+					<span data-localize="call.Privacy">隐私政策 </span> 
+					<span class="fr"><img width="16" src="images/myimg/jitou.png" alt="" /></span></li>
+				<!-- <li class="version ptb15 pb15 bdt pl12 clearfix">版本 <span class="fr"><img width="16" src="images/myimg/jitou.png" alt="" /></span></li> -->
+			</ul>
+		</div>
+		<script>
+			$(function() {
+				$('.version').click(function() {
+					layer.open({
+						content: '已经是最新版本了...',
+						skin: 'msg',
+						time: 2 //2秒后自动关闭
+					});
+				})
+				let phones = getlocal_storage('phone');
+				// $('.relation a').attr('href',phones);
+				// $('.relation a').text(phones);
+			})
+		</script>
+	</body>
+</html>

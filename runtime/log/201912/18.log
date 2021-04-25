@@ -1,0 +1,3952 @@
+---------------------------------------------------------------
+[2019-12-18T13:16:20+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.249438s] [吞吐率：4.01req/s] [内存消耗：3,020.02kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002094s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.002103s ]
+---------------------------------------------------------------
+[2019-12-18T13:16:26+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.041895s] [吞吐率：23.87req/s] [内存消耗：3,020.13kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001553s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.001047s ]
+---------------------------------------------------------------
+[2019-12-18T13:16:32+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.040299s] [吞吐率：24.81req/s] [内存消耗：3,020.13kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000591s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.000706s ]
+---------------------------------------------------------------
+[2019-12-18T13:16:38+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.040337s] [吞吐率：24.79req/s] [内存消耗：3,020.01kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000758s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.000849s ]
+---------------------------------------------------------------
+[2019-12-18T13:16:44+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.034487s] [吞吐率：29.00req/s] [内存消耗：3,020.07kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000615s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.001132s ]
+---------------------------------------------------------------
+[2019-12-18T13:16:50+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.057466s] [吞吐率：17.40req/s] [内存消耗：3,020.01kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000921s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.000980s ]
+---------------------------------------------------------------
+[2019-12-18T13:16:56+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.040591s] [吞吐率：24.64req/s] [内存消耗：3,020.07kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002195s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.000824s ]
+---------------------------------------------------------------
+[2019-12-18T13:17:02+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.046881s] [吞吐率：21.33req/s] [内存消耗：3,020.07kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000748s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.000974s ]
+---------------------------------------------------------------
+[2019-12-18T13:17:08+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.040339s] [吞吐率：24.79req/s] [内存消耗：3,020.01kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000754s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.000775s ]
+---------------------------------------------------------------
+[2019-12-18T13:17:14+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.035414s] [吞吐率：28.24req/s] [内存消耗：3,020.13kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000635s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.000818s ]
+---------------------------------------------------------------
+[2019-12-18T13:17:20+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.047573s] [吞吐率：21.02req/s] [内存消耗：3,020.13kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000666s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.000950s ]
+---------------------------------------------------------------
+[2019-12-18T13:17:26+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.037669s] [吞吐率：26.55req/s] [内存消耗：3,020.13kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001148s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.001418s ]
+---------------------------------------------------------------
+[2019-12-18T13:17:32+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.076444s] [吞吐率：13.08req/s] [内存消耗：3,020.07kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000848s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.000872s ]
+---------------------------------------------------------------
+[2019-12-18T13:17:38+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.042660s] [吞吐率：23.44req/s] [内存消耗：3,020.13kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000833s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.000863s ]
+---------------------------------------------------------------
+[2019-12-18T13:17:44+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.050816s] [吞吐率：19.68req/s] [内存消耗：3,020.07kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001994s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.001132s ]
+---------------------------------------------------------------
+[2019-12-18T13:17:50+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.042060s] [吞吐率：23.78req/s] [内存消耗：3,020.13kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000833s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.000946s ]
+---------------------------------------------------------------
+[2019-12-18T13:17:56+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.044712s] [吞吐率：22.37req/s] [内存消耗：3,020.07kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001742s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.000678s ]
+---------------------------------------------------------------
+[2019-12-18T13:18:02+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.041857s] [吞吐率：23.89req/s] [内存消耗：3,020.07kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000641s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.000836s ]
+---------------------------------------------------------------
+[2019-12-18T13:18:08+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.046324s] [吞吐率：21.59req/s] [内存消耗：3,020.01kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001360s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.002130s ]
+---------------------------------------------------------------
+[2019-12-18T13:18:14+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.042774s] [吞吐率：23.38req/s] [内存消耗：3,020.01kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002391s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.000800s ]
+---------------------------------------------------------------
+[2019-12-18T13:18:20+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.041220s] [吞吐率：24.26req/s] [内存消耗：3,020.13kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000790s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.000885s ]
+---------------------------------------------------------------
+[2019-12-18T13:18:26+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.040868s] [吞吐率：24.47req/s] [内存消耗：3,020.01kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000931s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.000967s ]
+---------------------------------------------------------------
+[2019-12-18T13:18:32+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.037203s] [吞吐率：26.88req/s] [内存消耗：3,020.01kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000791s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.000922s ]
+---------------------------------------------------------------
+[2019-12-18T13:18:38+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.044758s] [吞吐率：22.34req/s] [内存消耗：3,020.07kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000842s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.001024s ]
+---------------------------------------------------------------
+[2019-12-18T13:18:44+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.074748s] [吞吐率：13.38req/s] [内存消耗：3,020.07kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003648s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.002067s ]
+---------------------------------------------------------------
+[2019-12-18T13:18:50+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.045119s] [吞吐率：22.16req/s] [内存消耗：3,020.07kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000665s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.001096s ]
+---------------------------------------------------------------
+[2019-12-18T13:18:56+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.044171s] [吞吐率：22.64req/s] [内存消耗：3,019.95kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001291s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.000933s ]
+---------------------------------------------------------------
+[2019-12-18T13:19:02+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.048004s] [吞吐率：20.83req/s] [内存消耗：3,020.01kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001344s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.001048s ]
+---------------------------------------------------------------
+[2019-12-18T13:19:08+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.043902s] [吞吐率：22.78req/s] [内存消耗：3,020.01kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000752s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.000751s ]
+---------------------------------------------------------------
+[2019-12-18T13:19:14+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.034720s] [吞吐率：28.80req/s] [内存消耗：3,020.07kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001032s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.000928s ]
+---------------------------------------------------------------
+[2019-12-18T13:19:20+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.047591s] [吞吐率：21.01req/s] [内存消耗：3,020.07kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001211s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.001494s ]
+---------------------------------------------------------------
+[2019-12-18T13:19:26+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.051822s] [吞吐率：19.30req/s] [内存消耗：3,020.01kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004333s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.003415s ]
+---------------------------------------------------------------
+[2019-12-18T13:19:32+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.043545s] [吞吐率：22.96req/s] [内存消耗：3,020.01kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000871s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.001148s ]
+---------------------------------------------------------------
+[2019-12-18T13:19:37+08:00] 220.197.222.68 GET ex.top5184.com/mobile/lib/swiper.min.js.map
+[运行时间：0.027934s] [吞吐率：35.80req/s] [内存消耗：1,512.09kb] [文件加载：52]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-12-18T13:19:37+08:00] 220.197.222.68 GET ex.top5184.com/mobile/lib/jquery.min.map
+[运行时间：0.022964s] [吞吐率：43.55req/s] [内存消耗：1,512.09kb] [文件加载：52]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-12-18T13:19:38+08:00] 220.197.222.68 POST ex.top5184.com/api/news/list
+[运行时间：0.067815s] [吞吐率：14.75req/s] [内存消耗：2,049.87kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/news/list',
+  'route' => 'api/News/getList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+)
+[ info ] [ PARAM ] array (
+  'c_id' => '5',
+)
+---------------------------------------------------------------
+[2019-12-18T13:19:38+08:00] 220.197.222.68 POST ex.top5184.com/api/wallet/list
+[运行时间：0.055909s] [吞吐率：17.89req/s] [内存消耗：2,058.12kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/wallet/list',
+  'route' => 'api/wallet/getList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T13:19:38+08:00] 220.197.222.68 POST ex.top5184.com/api/news/list
+[运行时间：0.077750s] [吞吐率：12.86req/s] [内存消耗：2,049.87kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/news/list',
+  'route' => 'api/News/getList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+)
+[ info ] [ PARAM ] array (
+  'c_id' => '4',
+)
+---------------------------------------------------------------
+[2019-12-18T13:19:38+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.088284s] [吞吐率：11.33req/s] [内存消耗：3,020.01kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001498s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.001018s ]
+---------------------------------------------------------------
+[2019-12-18T13:19:44+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.038469s] [吞吐率：26.00req/s] [内存消耗：3,020.01kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000891s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.001158s ]
+---------------------------------------------------------------
+[2019-12-18T13:19:50+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?lang=hk&app=h5
+[运行时间：0.043651s] [吞吐率：22.91req/s] [内存消耗：3,020.07kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000854s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.001069s ]
+---------------------------------------------------------------
+[2019-12-18T13:19:53+08:00] 220.197.222.68 GET ex.top5184.com/mobile/lib/jquery.min.map
+[运行时间：0.020861s] [吞吐率：47.94req/s] [内存消耗：1,512.09kb] [文件加载：52]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-12-18T13:19:53+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?layer_loading=true&token=1d609d2b0628deadd01d1426139d46c3&lang=hk&app=h5
+[运行时间：0.043654s] [吞吐率：22.91req/s] [内存消耗：3,020.24kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/market.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'layer_loading' => 'true',
+  'token' => '1d609d2b0628deadd01d1426139d46c3',
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002809s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.000976s ]
+---------------------------------------------------------------
+[2019-12-18T13:19:55+08:00] 220.197.222.68 GET ex.top5184.com/web/getCutttencyInfo?layer_loading=false&token=1d609d2b0628deadd01d1426139d46c3&lang=hk&app=h5
+[运行时间：0.036946s] [吞吐率：27.07req/s] [内存消耗：3,020.18kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCutttencyInfo',
+  'route' => 'index/index/getCutttencyInfo',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/market.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'layer_loading' => 'false',
+  'token' => '1d609d2b0628deadd01d1426139d46c3',
+  'lang' => 'hk',
+  'app' => 'h5',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000765s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.*
+                from jyxt_currency_jy a,jyxt_currency b
+                where b.status = 0
+                and  b.type = a.type 
+                and b.symbol = a.symbol
+                and a.type = 1 [ RunTime:0.000949s ]
+---------------------------------------------------------------
+[2019-12-18T13:19:56+08:00] 220.197.222.68 GET ex.top5184.com/mobile/lib/jquery.min.map
+[运行时间：0.020403s] [吞吐率：49.01req/s] [内存消耗：1,512.09kb] [文件加载：52]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-12-18T13:19:56+08:00] 220.197.222.68 POST ex.top5184.com/api/transaction_out
+[运行时间：0.026624s] [吞吐率：37.56req/s] [内存消耗：2,051.54kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/transaction_out',
+  'route' => 'api/Transaction/transaction_out',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/transaction.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+)
+---------------------------------------------------------------
+[2019-12-18T13:19:56+08:00] 220.197.222.68 GET ex.top5184.com/api/currency/quotation_new
+[运行时间：0.034242s] [吞吐率：29.20req/s] [内存消耗：2,402.02kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/currency/quotation_new',
+  'route' => 'api/Currency/quotation_new',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/transaction.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T13:19:56+08:00] 220.197.222.68 POST ex.top5184.com/api/wallet/detail
+[运行时间：0.036110s] [吞吐率：27.69req/s] [内存消耗：2,058.64kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/wallet/detail',
+  'route' => 'api/wallet/detail',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/transaction.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '22',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+)
+[ info ] [ PARAM ] array (
+  'currency' => '3',
+  'type' => 'change',
+)
+---------------------------------------------------------------
+[2019-12-18T13:19:56+08:00] 220.197.222.68 POST ex.top5184.com/api/transaction/deal
+[运行时间：0.050401s] [吞吐率：19.84req/s] [内存消耗：2,051.61kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/transaction/deal',
+  'route' => 'api/Transaction/deal',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/transaction.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '25',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+)
+[ info ] [ PARAM ] array (
+  'legal_id' => '3',
+  'currency_id' => '17',
+)
+---------------------------------------------------------------
+[2019-12-18T13:19:56+08:00] 220.197.222.68 GET ex.top5184.com/api/user/info
+[运行时间：0.030709s] [吞吐率：32.56req/s] [内存消耗：2,053.78kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/user/info',
+  'route' => 'api/User/info',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/transaction.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T13:20:06+08:00] 220.197.222.68 GET ex.top5184.com/mobile/lib/jquery.min.map
+[运行时间：0.021057s] [吞吐率：47.49req/s] [内存消耗：1,512.09kb] [文件加载：52]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-12-18T13:20:06+08:00] 220.197.222.68 GET ex.top5184.com/api/currency/quotation_new
+[运行时间：0.024059s] [吞吐率：41.56req/s] [内存消耗：2,402.02kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/currency/quotation_new',
+  'route' => 'api/Currency/quotation_new',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/LeveragedDeals.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T13:20:06+08:00] 220.197.222.68 GET ex.top5184.com/api/user/info
+[运行时间：0.029331s] [吞吐率：34.09req/s] [内存消耗：2,053.78kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/user/info',
+  'route' => 'api/User/info',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/LeveragedDeals.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T13:20:06+08:00] 220.197.222.68 GET ex.top5184.com/api/user/info
+[运行时间：0.025514s] [吞吐率：39.19req/s] [内存消耗：2,053.78kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/user/info',
+  'route' => 'api/User/info',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/LeveragedDeals.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T13:20:08+08:00] 220.197.222.68 GET ex.top5184.com/api/user/info
+[运行时间：0.021103s] [吞吐率：47.39req/s] [内存消耗：2,053.78kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/user/info',
+  'route' => 'api/User/info',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/LeveragedDeals.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T13:20:09+08:00] 220.197.222.68 POST ex.top5184.com/api/wallet/list2
+[运行时间：0.023930s] [吞吐率：41.79req/s] [内存消耗：2,058.63kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/wallet/list2',
+  'route' => 'api/wallet/getList2',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '_ga=GA1.2.1839858161.1576588440; _gid=GA1.2.1849368228.1576588440; token=1d609d2b0628deadd01d1426139d46c3',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/assets.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Mobile Safari/537.36',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => '*/*',
+  'content-length' => '14',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+)
+[ info ] [ PARAM ] array (
+  'currency_name' => '',
+)
+---------------------------------------------------------------
+[2019-12-18T13:20:09+08:00] 220.197.222.68 GET ex.top5184.com/mobile/lib/swiper.min.js.map
+[运行时间：0.028619s] [吞吐率：34.94req/s] [内存消耗：1,512.09kb] [文件加载：52]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-12-18T17:37:33+08:00] 210.22.86.170 POST ex.top5184.com/api/news/list
+[运行时间：0.032331s] [吞吐率：30.93req/s] [内存消耗：2,049.87kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/news/list',
+  'route' => 'api/News/getList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+)
+[ info ] [ PARAM ] array (
+  'c_id' => '4',
+)
+---------------------------------------------------------------
+[2019-12-18T17:37:33+08:00] 210.22.86.170 POST ex.top5184.com/api/wallet/list
+[运行时间：0.047818s] [吞吐率：20.91req/s] [内存消耗：2,058.12kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/wallet/list',
+  'route' => 'api/wallet/getList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T17:37:33+08:00] 210.22.86.170 POST ex.top5184.com/api/news/list
+[运行时间：0.052591s] [吞吐率：19.01req/s] [内存消耗：2,049.87kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/news/list',
+  'route' => 'api/News/getList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+)
+[ info ] [ PARAM ] array (
+  'c_id' => '5',
+)
+---------------------------------------------------------------
+[2019-12-18T17:37:33+08:00] 210.22.86.170 GET ex.top5184.com/api/currency/quotation_new
+[运行时间：0.041878s] [吞吐率：23.88req/s] [内存消耗：2,402.27kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/currency/quotation_new',
+  'route' => 'api/Currency/quotation_new',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T17:37:39+08:00] 210.22.86.170 GET ex.top5184.com/api/currency/quotation_new
+[运行时间：0.025951s] [吞吐率：38.53req/s] [内存消耗：2,402.27kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/currency/quotation_new',
+  'route' => 'api/Currency/quotation_new',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T17:37:41+08:00] 210.22.86.170 GET ex.top5184.com/api/currency/quotation_new
+[运行时间：0.025081s] [吞吐率：39.87req/s] [内存消耗：2,402.27kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/currency/quotation_new',
+  'route' => 'api/Currency/quotation_new',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/market.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T17:37:45+08:00] 210.22.86.170 POST ex.top5184.com/api/transaction_out
+[运行时间：0.027427s] [吞吐率：36.46req/s] [内存消耗：2,052.04kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/transaction_out',
+  'route' => 'api/Transaction/transaction_out',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/transaction.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+)
+---------------------------------------------------------------
+[2019-12-18T17:37:45+08:00] 210.22.86.170 GET ex.top5184.com/api/currency/quotation_new
+[运行时间：0.031918s] [吞吐率：31.33req/s] [内存消耗：2,402.27kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/currency/quotation_new',
+  'route' => 'api/Currency/quotation_new',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/transaction.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T17:37:45+08:00] 210.22.86.170 POST ex.top5184.com/api/wallet/detail
+[运行时间：0.024800s] [吞吐率：40.32req/s] [内存消耗：2,059.14kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/wallet/detail',
+  'route' => 'api/wallet/detail',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/transaction.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '22',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+)
+[ info ] [ PARAM ] array (
+  'currency' => '3',
+  'type' => 'change',
+)
+---------------------------------------------------------------
+[2019-12-18T17:37:45+08:00] 210.22.86.170 POST ex.top5184.com/api/transaction/deal
+[运行时间：0.026571s] [吞吐率：37.63req/s] [内存消耗：2,052.11kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/transaction/deal',
+  'route' => 'api/Transaction/deal',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/transaction.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '25',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+)
+[ info ] [ PARAM ] array (
+  'legal_id' => '3',
+  'currency_id' => '17',
+)
+---------------------------------------------------------------
+[2019-12-18T17:37:45+08:00] 210.22.86.170 GET ex.top5184.com/api/user/info
+[运行时间：0.022388s] [吞吐率：44.67req/s] [内存消耗：2,054.03kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/user/info',
+  'route' => 'api/User/info',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/transaction.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T17:37:47+08:00] 210.22.86.170 GET ex.top5184.com/api/user/info
+[运行时间：0.019971s] [吞吐率：50.07req/s] [内存消耗：2,054.03kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/user/info',
+  'route' => 'api/User/info',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/LeveragedDeals.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T17:37:47+08:00] 210.22.86.170 GET ex.top5184.com/api/currency/quotation_new
+[运行时间：0.023298s] [吞吐率：42.92req/s] [内存消耗：2,402.27kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/currency/quotation_new',
+  'route' => 'api/Currency/quotation_new',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/LeveragedDeals.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T17:37:47+08:00] 210.22.86.170 GET ex.top5184.com/api/user/info
+[运行时间：0.020298s] [吞吐率：49.27req/s] [内存消耗：2,054.03kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/user/info',
+  'route' => 'api/User/info',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/LeveragedDeals.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T17:37:49+08:00] 210.22.86.170 GET ex.top5184.com/api/user/info
+[运行时间：0.020536s] [吞吐率：48.70req/s] [内存消耗：2,054.03kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/user/info',
+  'route' => 'api/User/info',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/LeveragedDeals.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T17:37:50+08:00] 210.22.86.170 POST ex.top5184.com/api/wallet/list2
+[运行时间：0.020940s] [吞吐率：47.76req/s] [内存消耗：2,058.75kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/wallet/list2',
+  'route' => 'api/wallet/getList2',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/assets.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => '*/*',
+  'content-length' => '14',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+)
+[ info ] [ PARAM ] array (
+  'currency_name' => '',
+)
+---------------------------------------------------------------
+[2019-12-18T17:37:55+08:00] 210.22.86.170 POST ex.top5184.com/api/news/list
+[运行时间：0.048110s] [吞吐率：20.79req/s] [内存消耗：2,049.87kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/news/list',
+  'route' => 'api/News/getList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+)
+[ info ] [ PARAM ] array (
+  'c_id' => '4',
+)
+---------------------------------------------------------------
+[2019-12-18T17:37:55+08:00] 210.22.86.170 POST ex.top5184.com/api/wallet/list
+[运行时间：0.043448s] [吞吐率：23.02req/s] [内存消耗：2,058.24kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/wallet/list',
+  'route' => 'api/wallet/getList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T17:37:55+08:00] 210.22.86.170 POST ex.top5184.com/api/news/list
+[运行时间：0.052792s] [吞吐率：18.94req/s] [内存消耗：2,049.87kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/news/list',
+  'route' => 'api/News/getList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+)
+[ info ] [ PARAM ] array (
+  'c_id' => '5',
+)
+---------------------------------------------------------------
+[2019-12-18T17:37:55+08:00] 210.22.86.170 GET ex.top5184.com/api/currency/quotation_new
+[运行时间：0.045274s] [吞吐率：22.09req/s] [内存消耗：2,402.27kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/currency/quotation_new',
+  'route' => 'api/Currency/quotation_new',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T17:38:01+08:00] 210.22.86.170 GET ex.top5184.com/api/currency/quotation_new
+[运行时间：0.020692s] [吞吐率：48.33req/s] [内存消耗：2,402.27kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/currency/quotation_new',
+  'route' => 'api/Currency/quotation_new',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T17:38:07+08:00] 210.22.86.170 GET ex.top5184.com/api/currency/quotation_new
+[运行时间：0.034784s] [吞吐率：28.75req/s] [内存消耗：2,402.27kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/currency/quotation_new',
+  'route' => 'api/Currency/quotation_new',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T17:38:11+08:00] 210.22.86.170 POST ex.top5184.com/api/transaction_out
+[运行时间：0.020055s] [吞吐率：49.86req/s] [内存消耗：2,052.04kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/transaction_out',
+  'route' => 'api/Transaction/transaction_out',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/transaction.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+)
+---------------------------------------------------------------
+[2019-12-18T17:38:11+08:00] 210.22.86.170 GET ex.top5184.com/api/currency/quotation_new
+[运行时间：0.022553s] [吞吐率：44.34req/s] [内存消耗：2,402.27kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/currency/quotation_new',
+  'route' => 'api/Currency/quotation_new',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/transaction.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T17:38:11+08:00] 210.22.86.170 POST ex.top5184.com/api/wallet/detail
+[运行时间：0.026360s] [吞吐率：37.94req/s] [内存消耗：2,059.14kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/wallet/detail',
+  'route' => 'api/wallet/detail',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/transaction.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '22',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+)
+[ info ] [ PARAM ] array (
+  'currency' => '3',
+  'type' => 'change',
+)
+---------------------------------------------------------------
+[2019-12-18T17:38:11+08:00] 210.22.86.170 POST ex.top5184.com/api/transaction/deal
+[运行时间：0.023084s] [吞吐率：43.32req/s] [内存消耗：2,052.11kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/transaction/deal',
+  'route' => 'api/Transaction/deal',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/transaction.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '25',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+)
+[ info ] [ PARAM ] array (
+  'legal_id' => '3',
+  'currency_id' => '17',
+)
+---------------------------------------------------------------
+[2019-12-18T17:38:12+08:00] 210.22.86.170 GET ex.top5184.com/api/user/info
+[运行时间：0.021817s] [吞吐率：45.84req/s] [内存消耗：2,054.03kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/user/info',
+  'route' => 'api/User/info',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/transaction.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T17:38:22+08:00] 210.22.86.170 GET ex.top5184.com/api/currency/quotation_new
+[运行时间：0.022757s] [吞吐率：43.94req/s] [内存消耗：2,402.27kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/currency/quotation_new',
+  'route' => 'api/Currency/quotation_new',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/market.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T17:38:30+08:00] 210.22.86.170 POST ex.top5184.com/api/transaction_out
+[运行时间：0.019218s] [吞吐率：52.03req/s] [内存消耗：2,052.04kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/transaction_out',
+  'route' => 'api/Transaction/transaction_out',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/transaction.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+)
+---------------------------------------------------------------
+[2019-12-18T17:38:30+08:00] 210.22.86.170 POST ex.top5184.com/api/wallet/detail
+[运行时间：0.019583s] [吞吐率：51.06req/s] [内存消耗：2,059.14kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/wallet/detail',
+  'route' => 'api/wallet/detail',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/transaction.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '22',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+)
+[ info ] [ PARAM ] array (
+  'currency' => '3',
+  'type' => 'change',
+)
+---------------------------------------------------------------
+[2019-12-18T17:38:30+08:00] 210.22.86.170 POST ex.top5184.com/api/transaction/deal
+[运行时间：0.020730s] [吞吐率：48.24req/s] [内存消耗：2,052.11kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/transaction/deal',
+  'route' => 'api/Transaction/deal',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/transaction.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '25',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+)
+[ info ] [ PARAM ] array (
+  'legal_id' => '3',
+  'currency_id' => '17',
+)
+---------------------------------------------------------------
+[2019-12-18T17:38:30+08:00] 210.22.86.170 GET ex.top5184.com/api/user/info
+[运行时间：0.021833s] [吞吐率：45.80req/s] [内存消耗：2,054.03kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/user/info',
+  'route' => 'api/User/info',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/transaction.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T17:38:38+08:00] 210.22.86.170 POST ex.top5184.com/api/news/list
+[运行时间：0.026274s] [吞吐率：38.06req/s] [内存消耗：2,049.87kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/news/list',
+  'route' => 'api/News/getList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+)
+[ info ] [ PARAM ] array (
+  'c_id' => '5',
+)
+---------------------------------------------------------------
+[2019-12-18T17:38:38+08:00] 210.22.86.170 POST ex.top5184.com/api/news/list
+[运行时间：0.031933s] [吞吐率：31.32req/s] [内存消耗：2,049.87kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/news/list',
+  'route' => 'api/News/getList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+)
+[ info ] [ PARAM ] array (
+  'c_id' => '4',
+)
+---------------------------------------------------------------
+[2019-12-18T17:38:38+08:00] 210.22.86.170 POST ex.top5184.com/api/wallet/list
+[运行时间：0.027974s] [吞吐率：35.75req/s] [内存消耗：2,058.24kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/wallet/list',
+  'route' => 'api/wallet/getList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T17:38:40+08:00] 210.22.86.170 POST ex.top5184.com/api/wallet/list2
+[运行时间：0.027278s] [吞吐率：36.66req/s] [内存消耗：2,058.75kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/wallet/list2',
+  'route' => 'api/wallet/getList2',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/assets.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => '*/*',
+  'content-length' => '14',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+)
+[ info ] [ PARAM ] array (
+  'currency_name' => '',
+)
+---------------------------------------------------------------
+[2019-12-18T17:38:48+08:00] 210.22.86.170 POST ex.top5184.com/api/wallet/list
+[运行时间：0.021643s] [吞吐率：46.20req/s] [内存消耗：2,058.24kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/wallet/list',
+  'route' => 'api/wallet/getList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T17:38:48+08:00] 210.22.86.170 POST ex.top5184.com/api/news/list
+[运行时间：0.023217s] [吞吐率：43.07req/s] [内存消耗：2,049.87kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/news/list',
+  'route' => 'api/News/getList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+)
+[ info ] [ PARAM ] array (
+  'c_id' => '4',
+)
+---------------------------------------------------------------
+[2019-12-18T17:38:49+08:00] 210.22.86.170 GET ex.top5184.com/api/currency/quotation_new
+[运行时间：0.022657s] [吞吐率：44.14req/s] [内存消耗：2,402.27kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/currency/quotation_new',
+  'route' => 'api/Currency/quotation_new',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T17:38:49+08:00] 210.22.86.170 POST ex.top5184.com/api/news/list
+[运行时间：0.019290s] [吞吐率：51.84req/s] [内存消耗：2,049.87kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/news/list',
+  'route' => 'api/News/getList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+)
+[ info ] [ PARAM ] array (
+  'c_id' => '5',
+)
+---------------------------------------------------------------
+[2019-12-18T17:38:54+08:00] 210.22.86.170 GET ex.top5184.com/api/currency/quotation_new
+[运行时间：0.022041s] [吞吐率：45.37req/s] [内存消耗：2,402.27kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/currency/quotation_new',
+  'route' => 'api/Currency/quotation_new',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T17:39:00+08:00] 210.22.86.170 GET ex.top5184.com/api/currency/quotation_new
+[运行时间：0.022504s] [吞吐率：44.44req/s] [内存消耗：2,402.27kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/currency/quotation_new',
+  'route' => 'api/Currency/quotation_new',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T17:39:03+08:00] 210.22.86.170 GET ex.top5184.com/mobile/journalism.html?id=60
+[运行时间：0.016211s] [吞吐率：61.69req/s] [内存消耗：1,512.14kb] [文件加载：52]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-12-18T17:39:09+08:00] 210.22.86.170 POST ex.top5184.com/api/news/list
+[运行时间：0.026286s] [吞吐率：38.04req/s] [内存消耗：2,049.87kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/news/list',
+  'route' => 'api/News/getList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+)
+[ info ] [ PARAM ] array (
+  'c_id' => '4',
+)
+---------------------------------------------------------------
+[2019-12-18T17:39:09+08:00] 210.22.86.170 POST ex.top5184.com/api/news/list
+[运行时间：0.028715s] [吞吐率：34.82req/s] [内存消耗：2,049.87kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/news/list',
+  'route' => 'api/News/getList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+)
+[ info ] [ PARAM ] array (
+  'c_id' => '5',
+)
+---------------------------------------------------------------
+[2019-12-18T17:39:11+08:00] 210.22.86.170 POST ex.top5184.com/api/wallet/list
+[运行时间：0.023264s] [吞吐率：42.98req/s] [内存消耗：2,058.24kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/wallet/list',
+  'route' => 'api/wallet/getList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T17:39:12+08:00] 210.22.86.170 POST ex.top5184.com/api/wallet/list2
+[运行时间：0.023474s] [吞吐率：42.60req/s] [内存消耗：2,058.75kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/wallet/list2',
+  'route' => 'api/wallet/getList2',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/assets.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => '*/*',
+  'content-length' => '14',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+)
+[ info ] [ PARAM ] array (
+  'currency_name' => '',
+)
+---------------------------------------------------------------
+[2019-12-18T17:39:17+08:00] 210.22.86.170 POST ex.top5184.com/api/transaction_out
+[运行时间：0.020843s] [吞吐率：47.98req/s] [内存消耗：2,052.04kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/transaction_out',
+  'route' => 'api/Transaction/transaction_out',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/transaction.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+)
+---------------------------------------------------------------
+[2019-12-18T17:39:18+08:00] 210.22.86.170 GET ex.top5184.com/api/currency/quotation_new
+[运行时间：0.026725s] [吞吐率：37.42req/s] [内存消耗：2,402.27kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/currency/quotation_new',
+  'route' => 'api/Currency/quotation_new',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/transaction.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T17:39:18+08:00] 210.22.86.170 GET ex.top5184.com/api/currency/quotation_new
+[运行时间：0.021267s] [吞吐率：47.02req/s] [内存消耗：2,402.27kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/currency/quotation_new',
+  'route' => 'api/Currency/quotation_new',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/market.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => '*/*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T17:39:20+08:00] 210.22.86.170 POST ex.top5184.com/api/news/list
+[运行时间：0.021014s] [吞吐率：47.59req/s] [内存消耗：2,049.87kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/news/list',
+  'route' => 'api/News/getList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+)
+[ info ] [ PARAM ] array (
+  'c_id' => '5',
+)
+---------------------------------------------------------------
+[2019-12-18T17:39:20+08:00] 210.22.86.170 POST ex.top5184.com/api/news/list
+[运行时间：0.043115s] [吞吐率：23.19req/s] [内存消耗：2,049.87kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/news/list',
+  'route' => 'api/News/getList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '6',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+)
+[ info ] [ PARAM ] array (
+  'c_id' => '4',
+)
+---------------------------------------------------------------
+[2019-12-18T17:39:20+08:00] 210.22.86.170 POST ex.top5184.com/api/wallet/list
+[运行时间：0.030483s] [吞吐率：32.81req/s] [内存消耗：2,058.24kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/wallet/list',
+  'route' => 'api/wallet/getList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '0',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T17:39:20+08:00] 210.22.86.170 GET ex.top5184.com/api/currency/quotation_new
+[运行时间：0.024166s] [吞吐率：41.38req/s] [内存消耗：2,402.27kb] [文件加载：63]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'api/currency/quotation_new',
+  'route' => 'api/Currency/quotation_new',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'token=1d609d2b0628deadd01d1426139d46c3; _ga=GA1.2.897655542.1576139375',
+  'accept-language' => 'zh-CN,en-US;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/mobile/index.html',
+  'user-agent' => 'Mozilla/5.0 (Linux; Android 9; LON-AL00 Build/HUAWEILON-AL00; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/66.0.3359.126 MQQBrowser/6.2 TBS/45016 Mobile Safari/537.36 MMWEBID/4372 MicroMessenger/6.7.3.1360(0x2607033D) NetType/WIFI Language/zh_CN Process/tools',
+  'authorization' => '1d609d2b0628deadd01d1426139d46c3',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+)
+---------------------------------------------------------------
+[2019-12-18T17:39:24+08:00] 210.22.86.170 GET ex.top5184.com/mobile/journalism.html?id=39
+[运行时间：0.019995s] [吞吐率：50.01req/s] [内存消耗：1,512.14kb] [文件加载：52]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-12-18T17:40:24+08:00] 61.151.178.197 GET ex.top5184.com/mobile/journalism.html?id=39
+[运行时间：0.020993s] [吞吐率：47.63req/s] [内存消耗：1,512.14kb] [文件加载：52]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+---------------------------------------------------------------
+[2019-12-18T20:58:42+08:00] 171.34.197.124 POST ex.top5184.com/Login/login
+[运行时间：0.031248s] [吞吐率：32.00req/s] [内存消耗：2,215.33kb] [文件加载：62]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'Login/login',
+  'route' => 'admin/login/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=102325205.2500130535198393000.1576673862586.9116; monitor_count=2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/admin.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '44',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+)
+[ info ] [ PARAM ] array (
+  'path' => '/login',
+  'username' => 'admin',
+  'password' => '123456',
+)
+---------------------------------------------------------------
+[2019-12-18T21:03:29+08:00] 171.34.197.124 POST ex.top5184.com/Login/login
+[运行时间：0.112725s] [吞吐率：8.87req/s] [内存消耗：3,222.37kb] [文件加载：69]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'Login/login',
+  'route' => 'admin/login/login',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'post',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=102325205.2500130535198393000.1576673862586.9116; monitor_count=2',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/admin.html',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'origin' => 'http://ex.top5184.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '45',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+)
+[ info ] [ PARAM ] array (
+  'path' => '/login',
+  'username' => 'admin2',
+  'password' => '123456',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001905s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jyxt_admin` [ RunTime:0.002208s ]
+[ sql ] [ SQL ] SELECT `id`,`nickname`,`auth`,`status` FROM `jyxt_admin` WHERE  `username` = 'admin2'  AND `password` = 'e10adc3949ba59abbe56e057f20f883e' LIMIT 1 [ RunTime:0.016354s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000731s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] UPDATE `jyxt_admin`  SET `token` = '935f9dc50cdc645617d8b46e48e720e7f5260111'  WHERE  `id` = 2 [ RunTime:0.024532s ]
+---------------------------------------------------------------
+[2019-12-18T21:03:30+08:00] 171.34.197.124 GET ex.top5184.com/User/getCurrency?token=935f9dc50cdc645617d8b46e48e720e7f5260111&path=%2Fdashboard&type=2
+[运行时间：0.334858s] [吞吐率：2.99req/s] [内存消耗：3,202.65kb] [文件加载：68]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'User/getCurrency',
+  'route' => 'admin/user/getCurrency',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=102325205.2500130535198393000.1576673862586.9116; monitor_count=2; day_jyxt_admin_token_20190702235959=935f9dc50cdc645617d8b46e48e720e7f5260111; day_jyxt_admin_auth_20190702235959=boss',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => '935f9dc50cdc645617d8b46e48e720e7f5260111',
+  'path' => '/dashboard',
+  'type' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003008s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jyxt_admin` [ RunTime:0.001533s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jyxt_admin` WHERE  `token` = '935f9dc50cdc645617d8b46e48e720e7f5260111'  AND `status` = 1 LIMIT 1 [ RunTime:0.000413s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000366s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SELECT `auth`,`id` FROM `jyxt_admin` WHERE  `token` = '935f9dc50cdc645617d8b46e48e720e7f5260111' LIMIT 1 [ RunTime:0.000287s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000297s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jyxt_currency` [ RunTime:0.028588s ]
+[ sql ] [ SQL ] SELECT * FROM `jyxt_currency` WHERE  `type` = '2' [ RunTime:0.000576s ]
+---------------------------------------------------------------
+[2019-12-18T21:03:32+08:00] 171.34.197.124 GET ex.top5184.com/agent/home?token=935f9dc50cdc645617d8b46e48e720e7f5260111&path=%2Fdashboard
+[运行时间：0.194687s] [吞吐率：5.14req/s] [内存消耗：3,335.23kb] [文件加载：69]
+[ info ] [ LANG ] /www/wwwroot/PHP/jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'agent/home',
+  'route' => 'admin/agent/home',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => '__guid=102325205.2500130535198393000.1576673862586.9116; monitor_count=2; day_jyxt_admin_token_20190702235959=935f9dc50cdc645617d8b46e48e720e7f5260111; day_jyxt_admin_auth_20190702235959=boss',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://ex.top5184.com/admin.html',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/63.0.3239.132 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'keep-alive',
+  'host' => 'ex.top5184.com',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => '935f9dc50cdc645617d8b46e48e720e7f5260111',
+  'path' => '/dashboard',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000923s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jyxt_admin` [ RunTime:0.001870s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jyxt_admin` WHERE  `token` = '935f9dc50cdc645617d8b46e48e720e7f5260111'  AND `status` = 1 LIMIT 1 [ RunTime:0.016078s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000651s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SELECT `auth`,`id` FROM `jyxt_admin` WHERE  `token` = '935f9dc50cdc645617d8b46e48e720e7f5260111' LIMIT 1 [ RunTime:0.000588s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000644s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SELECT `auth`,`id` FROM `jyxt_admin` WHERE  `token` = '935f9dc50cdc645617d8b46e48e720e7f5260111' LIMIT 1 [ RunTime:0.000408s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000633s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jyxt_user` [ RunTime:0.001741s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jyxt_user` [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jyxt_user` WHERE  `time_stamp` = '1576587812' [ RunTime:0.016434s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jyxt_user` WHERE  `time_stamp` = '1576587812'  AND `time_stamp` = '1576598400' [ RunTime:0.000845s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jyxt_user` WHERE  `time_stamp` = '1576587812'  AND `time_stamp` = '1576598400'  AND `time_stamp` = '1576598400'  AND `id_card` IN ('id','<>','') [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jyxt_user` WHERE  `time_stamp` = '1576587812'  AND `time_stamp` = '1576598400'  AND `time_stamp` = '1576598400'  AND `id_card` IN ('id','<>','')  AND `time_stamp` = '1576587812'  AND `id_card` IN ('id','<>','') [ RunTime:0.001120s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jyxt_user` WHERE  `time_stamp` = '1576587812'  AND `time_stamp` = '1576598400'  AND `time_stamp` = '1576598400'  AND `id_card` IN ('id','<>','')  AND `time_stamp` = '1576587812'  AND `id_card` IN ('id','<>','')  AND `time_stamp` = '1576598400'  AND `id_card` IN ('id','<>','') [ RunTime:0.000486s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000515s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.amount, a.total,a.open_fee,UNIX_TIMESTAMP(a.time) as time
+                from jyxt_user_deal_lines_c a
+                LEFT JOIN jyxt_user b on b.id = a.user_id
+                where 1=1 UNION ALL select 0 as amount,0 as total,a.money as fee,UNIX_TIMESTAMP(a.add_time) as time
+                from jyxt_user_wallet_log a
+                LEFT JOIN jyxt_user b on b.id = a.user_id
+                where type in (12,13) [ RunTime:0.017447s ]

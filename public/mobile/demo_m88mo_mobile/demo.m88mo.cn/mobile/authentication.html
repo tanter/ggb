@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>身份验证</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<script src="../js/mobile-util.js"></script>
+	<script src="lib/layer_mobile/layer.js"></script>
+	<script src="lib/jquery-2.1.1.min.js"></script>
+	<script src="javascripts/main.js"></script>
+	<script src="javascripts/jquery.cookie.js"></script>
+	<script src="lib/jquery.localize.min.js"></script>
+	<script src="lib/language_cookie.js"></script>
+</head>
+<style>
+	.haokan {border: 1px solid #1B2A3E;}
+	</style>
+
+<body>
+
+
+<!-- Copyright � 2005. Spidersoft Ltd -->
+<style>
+A.applink:hover {border: 2px dotted #DCE6F4;padding:2px;background-color:#ffff00;color:green;text-decoration:none}
+A.applink       {border: 2px dotted #DCE6F4;padding:2px;color:#2F5BFF;background:transparent;text-decoration:none}
+A.info          {color:#2F5BFF;background:transparent;text-decoration:none}
+A.info:hover    {color:green;background:transparent;text-decoration:underline}
+</style>
+<div style='BORDER: 1px solid #DCE6F4; MARGIN-TOP: 20px; MARGIN-BOTTOM: 20px; MARGIN-LEFT: 5px; MARGIN-RIGHT: 5px; PADDING: 5px; BACKGROUND-COLOR: #eef8ff;line-height:180%; COLOR: #000000; font-family: Arial; font-size: 8pt; width=100%; FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr="#FFFFFFFF", EndColorStr="#F2F5FAFF");'>
+This page was saved using <a class="applink" href="http://www.spidersoft.com"><b>WebZIP 7.0.3.1030</b></a> <a class="applink" href="http://www.spidersoft.com"><b>offline browser</b></a>  on  08/07/19 18:14:29.<br>
+<b>Address:</b> <a class="info" href="http://jyxt.ys.13mv.com/mobile/authentication.html">http://jyxt.ys.13mv.com/mobile/authentication.html</a><br>
+<b>Title:</b> 身份验证 &nbsp;&bull;&nbsp; <b>Size:</b> 5506 &nbsp;&bull;&nbsp; <b>Last Modified:</b> Tue, 30 Jul 2019 02:30:27 GMT<br></div>
+<!-- /Copyright � 2005. Spidersoft Ltd -->
+
+
+	<div id="app">
+		<header class="header">
+			<a class="back mt5" href="javascript:history.go(-1)">
+
+			</a>
+			<h4 class="ftw ft16" data-localize="auth.test">身份验证</h4>
+		</header>
+		<div class="header-space"></div>
+		<div class="from mb20 ftw ml12 auth">
+			<div class="mb20 mt20">
+				<p data-localize="auth.name">姓名：</p>
+				<input type="text" class="name bdb pb5 ft14 ftw" placeholder="请输入姓名" data-localize="auth.pname" />
+			</div>
+			<div class="mb20">
+				<p data-localize="auth.number">证件号：</p>
+				<input type="text" class="sfzh bdb pb5 ft14 ftw" placeholder="请输入证件号" data-localize="auth.pnum" />
+			</div>
+		</div>
+		<div class="text ml12 ">
+			<p class="white_gray ft12" data-localize="auth.upimg">请上传证件正反面，以及手持证件照正面照片。</p>
+		</div>
+		<div class="flex jucenter mt15">
+			<div class="qwe">
+				<div id="prev" class="haokan">
+					<img src="images/myimg/688660269851391423.png" alt="" id="view" />
+					<input type="file" id="file" accept="image/*" name='file' />
+				</div>
+			</div>
+			<div class="qwe" style="margin:0 20px;">
+				<div id="prev1" class="haokan">
+					<img src="images/myimg/688660269851391423.png" alt="" id="view1" />
+					<input type="file" id="file1" accept="image/*" />
+				</div>
+			</div>
+			<div class="qwe">
+				<div id="prev2" class="haokan">
+					<img src="images/myimg/688660269851391423.png" alt="" id="view2" />
+					<input type="file" id="file2" accept="image/*" name='file' />
+				</div>
+			</div>
+		</div>
+
+
+		<button class="bgLinearblue ftw ft16" data-localize="auth.updata">提交</button>
+	</div>
+</body>
+
+</html>
+<script>
+	$('#file').change(function () {
+		var formData = new FormData();
+		formData.append("file", $("#file")[0].files[0]);
+		console.log(formData)
+		var i = layer_loading()
+		$.ajax({
+			url: _API + 'upload',
+			type: 'post',
+			data: formData,
+			processData: false,
+			contentType: false,
+			success: function (msg) {
+				console.log(msg)
+				if (msg.type == 'ok') {
+					$("#view").attr("src", msg.message);
+					setTimeout(function () {
+						layer_close(i);
+					}, 3000)
+				} else {
+					$("#view").attr("src", 'images/myimg/688660269851391423.png');
+					layer_msg(msg.message);
+					setTimeout(function () {
+						layer_close(i);
+					}, 500)
+				}
+			}
+		});
+	});
+	$('#file2').change(function () {
+		var formData = new FormData();
+		formData.append("file", $("#file2")[0].files[0]);
+		var i = layer_loading()
+		$.ajax({
+			url: _API + 'upload',
+			type: 'post',
+			data: formData,
+			processData: false,
+			contentType: false,
+			success: function (msg) {
+				console.log(msg)
+				if (msg.type == 'ok') {
+					$("#view2").attr("src", msg.message);
+					setTimeout(function () {
+						layer_close(i);
+					}, 3000)
+				} else {
+					$("#view2").attr("src", 'images/myimg/688660269851391423.png');
+					layer_msg(msg.message)
+					setTimeout(function () {
+						layer_close(i);
+					}, 500)
+				}
+			}
+		});
+	});
+	$('#file1').change(function () {
+		var formData = new FormData();
+		formData.append("file", $("#file1")[0].files[0]);
+		var i = layer_loading();
+		$.ajax({
+			url: _API + 'upload',
+			type: 'post',
+			data: formData,
+			processData: false,
+			contentType: false,
+			success: function (msg) {
+				console.log(msg)
+				if (msg.type == 'ok') {
+					$("#view1").attr("src", msg.message);
+					setTimeout(function () {
+						layer_close(i);
+					}, 3000)
+				} else {
+					$("#view1").attr("src", 'images/myimg/688660269851391423.png');
+					layer_msg(msg.message)
+					setTimeout(function () {
+						layer_close(i);
+					}, 500)
+				}
+			}
+		});
+	});
+</script>
+<script>
+	$("button").click(function () {
+		var token = get_user_login();
+		var name = $(".name").val();
+		var sfzh = $(".sfzh").val();
+		var img1 = $("#view").attr("src");
+		var img2 = $("#view1").attr("src");
+		var img3 = $("#view2").attr("src");
+		var aa = this;
+		var token = get_user_login();
+		if (!name) {
+			layer_msg(prname);
+			return false;
+		}
+		if (!sfzh) {
+			layer_msg(pid);
+			return false;
+		}
+		if (img1 == 'images/myimg/688660269851391423.png' || img2 == 'images/myimg/688660269851391423.png' || img3 ==
+			'images/myimg/688660269851391423.png') {
+			layer_msg(pimg);
+			return false;
+		}
+		$.ajax({
+			url: _API + 'user/real_name',
+			type: 'POST',
+			data: {
+				name: name,
+				card_id: sfzh,
+				front_pic: img1,
+				reverse_pic: img2,
+				hand_pic: img3
+			},
+			dataType: 'JSON',
+			async: true,
+			beforeSend: function beforeSend(request) {
+				request.setRequestHeader("Authorization", token);
+			},
+			success: function (data) {
+				console.log(data)
+				layer_msg(data.message);
+
+				if (data.type == 'ok') {
+					setTimeout(function () {
+						window.history.go(-1);
+					}, 1500)
+				}
+
+			}
+
+		})
+	})
+</script>

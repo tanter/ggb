@@ -1,0 +1,785 @@
+---------------------------------------------------------------
+[2021-03-28T14:35:30+08:00] 127.0.0.1 GET localhost:7025/Info/getInfo?token=e1d17c6336b7e4d997fd4b0aa31d371a426d97c9&path=%2F
+[运行时间：0.112990s] [吞吐率：8.85req/s] [内存消耗：908.95kb] [文件加载：68]
+[ info ] [ LANG ] /Source/70384jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'Info/getInfo',
+  'route' => 'admin/info/info',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://123.57.6.75/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://123.57.6.75',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'accept' => 'application/json, text/plain, */*',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'connection' => 'keep-alive',
+  'host' => 'localhost:7025',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9',
+  'path' => '/',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001110s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jyxt_admin` [ RunTime:0.010304s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jyxt_admin` WHERE  `token` = 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9'  AND `status` = 1 LIMIT 1 [ RunTime:0.012418s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001148s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SELECT `auth`,`id` FROM `jyxt_admin` WHERE  `token` = 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9' LIMIT 1 [ RunTime:0.002165s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000917s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SELECT `nickname`,`username` FROM `jyxt_admin` WHERE  `token` = 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9' LIMIT 1 [ RunTime:0.002248s ]
+---------------------------------------------------------------
+[2021-03-28T14:35:31+08:00] 127.0.0.1 GET localhost:7025/User/getCurrency?token=e1d17c6336b7e4d997fd4b0aa31d371a426d97c9&path=%2Fdashboard&type=2
+[运行时间：0.088624s] [吞吐率：11.28req/s] [内存消耗：922.97kb] [文件加载：68]
+[ info ] [ LANG ] /Source/70384jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'User/getCurrency',
+  'route' => 'admin/user/getCurrency',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://123.57.6.75/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://123.57.6.75',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'accept' => 'application/json, text/plain, */*',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'connection' => 'keep-alive',
+  'host' => 'localhost:7025',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9',
+  'path' => '/dashboard',
+  'type' => '2',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001087s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jyxt_admin` [ RunTime:0.004369s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jyxt_admin` WHERE  `token` = 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9'  AND `status` = 1 LIMIT 1 [ RunTime:0.024064s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000971s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SELECT `auth`,`id` FROM `jyxt_admin` WHERE  `token` = 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9' LIMIT 1 [ RunTime:0.014049s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000975s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jyxt_currency` [ RunTime:0.012890s ]
+[ sql ] [ SQL ] SELECT * FROM `jyxt_currency` WHERE  `type` = '2' [ RunTime:0.016698s ]
+---------------------------------------------------------------
+[2021-03-28T14:35:31+08:00] 127.0.0.1 GET localhost:7025/agent/home?token=e1d17c6336b7e4d997fd4b0aa31d371a426d97c9&path=%2Fdashboard
+[运行时间：0.203674s] [吞吐率：4.91req/s] [内存消耗：1,129.41kb] [文件加载：69]
+[ info ] [ LANG ] /Source/70384jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'agent/home',
+  'route' => 'admin/agent/home',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://123.57.6.75/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://123.57.6.75',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'accept' => 'application/json, text/plain, */*',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'connection' => 'keep-alive',
+  'host' => 'localhost:7025',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9',
+  'path' => '/dashboard',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002073s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jyxt_admin` [ RunTime:0.003121s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jyxt_admin` WHERE  `token` = 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9'  AND `status` = 1 LIMIT 1 [ RunTime:0.034114s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002239s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SELECT `auth`,`id` FROM `jyxt_admin` WHERE  `token` = 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9' LIMIT 1 [ RunTime:0.005868s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002248s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SELECT `auth`,`id` FROM `jyxt_admin` WHERE  `token` = 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9' LIMIT 1 [ RunTime:0.015763s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002005s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jyxt_user` [ RunTime:0.017563s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jyxt_user` [ RunTime:0.003525s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jyxt_user` WHERE  `time_stamp` = '1616826931' [ RunTime:0.013930s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jyxt_user` WHERE  `time_stamp` = '1616826931'  AND `time_stamp` = '1616860800' [ RunTime:0.009082s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jyxt_user` WHERE  `time_stamp` = '1616826931'  AND `time_stamp` = '1616860800'  AND `time_stamp` = '1616860800'  AND `id_card` IN ('id','<>','') [ RunTime:0.001111s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jyxt_user` WHERE  `time_stamp` = '1616826931'  AND `time_stamp` = '1616860800'  AND `time_stamp` = '1616860800'  AND `id_card` IN ('id','<>','')  AND `time_stamp` = '1616826931'  AND `id_card` IN ('id','<>','') [ RunTime:0.001780s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jyxt_user` WHERE  `time_stamp` = '1616826931'  AND `time_stamp` = '1616860800'  AND `time_stamp` = '1616860800'  AND `id_card` IN ('id','<>','')  AND `time_stamp` = '1616826931'  AND `id_card` IN ('id','<>','')  AND `time_stamp` = '1616860800'  AND `id_card` IN ('id','<>','') [ RunTime:0.001822s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011331s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.amount, a.total,a.open_fee,UNIX_TIMESTAMP(a.time) as time
+                from jyxt_user_deal_lines_c a
+                LEFT JOIN jyxt_user b on b.id = a.user_id
+                where 1=1 UNION ALL select 0 as amount,0 as total,a.money as fee,UNIX_TIMESTAMP(a.add_time) as time
+                from jyxt_user_wallet_log a
+                LEFT JOIN jyxt_user b on b.id = a.user_id
+                where type in (12,13) [ RunTime:0.051589s ]
+---------------------------------------------------------------
+[2021-03-28T14:35:58+08:00] 127.0.0.1 GET localhost:7025/Text/getText?token=e1d17c6336b7e4d997fd4b0aa31d371a426d97c9&path=%2FwebAboutUs&type=guanyuwomen
+[运行时间：0.077371s] [吞吐率：12.92req/s] [内存消耗：923.30kb] [文件加载：68]
+[ info ] [ LANG ] /Source/70384jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'Text/getText',
+  'route' => 'admin/Text/getText',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://123.57.6.75/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://123.57.6.75',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'accept' => 'application/json, text/plain, */*',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'connection' => 'keep-alive',
+  'host' => 'localhost:7025',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9',
+  'path' => '/webAboutUs',
+  'type' => 'guanyuwomen',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002597s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jyxt_admin` [ RunTime:0.004793s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jyxt_admin` WHERE  `token` = 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9'  AND `status` = 1 LIMIT 1 [ RunTime:0.015080s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000733s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SELECT `auth`,`id` FROM `jyxt_admin` WHERE  `token` = 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9' LIMIT 1 [ RunTime:0.011259s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000769s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jyxt_text` [ RunTime:0.007328s ]
+[ sql ] [ SQL ] SELECT * FROM `jyxt_text` WHERE  `type` = 'guanyuwomen' [ RunTime:0.020971s ]
+---------------------------------------------------------------
+[2021-03-28T14:36:02+08:00] 127.0.0.1 GET localhost:7025/Admin/getList?token=e1d17c6336b7e4d997fd4b0aa31d371a426d97c9&path=%2Fadmin&page=1&limit=10&auth=boss
+[运行时间：0.093244s] [吞吐率：10.72req/s] [内存消耗：1,591.08kb] [文件加载：68]
+[ info ] [ LANG ] /Source/70384jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'Admin/getList',
+  'route' => 'admin/Admin/getList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://123.57.6.75/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://123.57.6.75',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'accept' => 'application/json, text/plain, */*',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'connection' => 'keep-alive',
+  'host' => 'localhost:7025',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9',
+  'path' => '/admin',
+  'page' => '1',
+  'limit' => '10',
+  'auth' => 'boss',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001120s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jyxt_admin` [ RunTime:0.004137s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jyxt_admin` WHERE  `token` = 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9'  AND `status` = 1 LIMIT 1 [ RunTime:0.001344s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000759s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SELECT `auth`,`id` FROM `jyxt_admin` WHERE  `token` = 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9' LIMIT 1 [ RunTime:0.000424s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001005s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select id, nickname,username,`password`,`phone`,`status`,add_time,code,auth from jyxt_admin where is_delete = 0 and  auth<>'agent' order by id desc limit '0','10' [ RunTime:0.001882s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001005s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jyxt_user` [ RunTime:0.002956s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jyxt_user` WHERE  `p_id` = 19 [ RunTime:0.000910s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000855s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jyxt_user` WHERE  `p_id` = 18 [ RunTime:0.005778s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002865s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jyxt_user` WHERE  `p_id` = 17 [ RunTime:0.007857s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000762s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jyxt_user` WHERE  `p_id` = 12 [ RunTime:0.006946s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001198s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jyxt_user` WHERE  `p_id` = 11 [ RunTime:0.003599s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000900s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jyxt_user` WHERE  `p_id` = 6 [ RunTime:0.000768s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001304s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jyxt_user` WHERE  `p_id` = 5 [ RunTime:0.001441s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001032s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jyxt_user` WHERE  `p_id` = 3 [ RunTime:0.003765s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001081s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jyxt_user` WHERE  `p_id` = 2 [ RunTime:0.014296s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004806s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `jyxt_admin` WHERE  `auth` = 'boss'  AND `is_delete` = 0 [ RunTime:0.000663s ]
+---------------------------------------------------------------
+[2021-03-28T14:36:05+08:00] 127.0.0.1 GET localhost:7025/system/getEmail?token=e1d17c6336b7e4d997fd4b0aa31d371a426d97c9&path=%2Femail
+[运行时间：0.029850s] [吞吐率：33.50req/s] [内存消耗：917.88kb] [文件加载：69]
+[ info ] [ LANG ] /Source/70384jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'system/getEmail',
+  'route' => 'admin/params/getEmail',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://123.57.6.75/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://123.57.6.75',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'accept' => 'application/json, text/plain, */*',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'connection' => 'keep-alive',
+  'host' => 'localhost:7025',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9',
+  'path' => '/email',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002166s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jyxt_admin` [ RunTime:0.001797s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jyxt_admin` WHERE  `token` = 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9'  AND `status` = 1 LIMIT 1 [ RunTime:0.000562s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000749s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SELECT `auth`,`id` FROM `jyxt_admin` WHERE  `token` = 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9' LIMIT 1 [ RunTime:0.000619s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002383s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jyxt_params` [ RunTime:0.003115s ]
+[ sql ] [ SQL ] SELECT `email_host`,`email_from`,`email_fromname`,`email_username`,`email_password` FROM `jyxt_params` WHERE  ( id=1 ) LIMIT 1 [ RunTime:0.005002s ]
+---------------------------------------------------------------
+[2021-03-28T14:36:07+08:00] 127.0.0.1 GET localhost:7025/system/getSms?token=e1d17c6336b7e4d997fd4b0aa31d371a426d97c9&path=%2Fsms
+[运行时间：0.022630s] [吞吐率：44.19req/s] [内存消耗：915.91kb] [文件加载：69]
+[ info ] [ LANG ] /Source/70384jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'system/getSms',
+  'route' => 'admin/params/getSms',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://123.57.6.75/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://123.57.6.75',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'accept' => 'application/json, text/plain, */*',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'connection' => 'keep-alive',
+  'host' => 'localhost:7025',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9',
+  'path' => '/sms',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000731s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jyxt_admin` [ RunTime:0.001502s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jyxt_admin` WHERE  `token` = 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9'  AND `status` = 1 LIMIT 1 [ RunTime:0.000453s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000630s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SELECT `auth`,`id` FROM `jyxt_admin` WHERE  `token` = 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9' LIMIT 1 [ RunTime:0.001533s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000676s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jyxt_params` [ RunTime:0.001978s ]
+[ sql ] [ SQL ] SELECT `aliyun_accesskey_id`,`aliyun_accesskey_secret`,`aliyun_sign_name`,`aliyun_template_code` FROM `jyxt_params` WHERE  ( id=1 ) LIMIT 1 [ RunTime:0.009433s ]
+---------------------------------------------------------------
+[2021-03-28T14:36:10+08:00] 127.0.0.1 GET localhost:7025/system/getRate?token=e1d17c6336b7e4d997fd4b0aa31d371a426d97c9&path=%2Frate
+[运行时间：0.029901s] [吞吐率：33.44req/s] [内存消耗：919.31kb] [文件加载：69]
+[ info ] [ LANG ] /Source/70384jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'system/getRate',
+  'route' => 'admin/params/getRate',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://123.57.6.75/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://123.57.6.75',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'accept' => 'application/json, text/plain, */*',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'connection' => 'keep-alive',
+  'host' => 'localhost:7025',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9',
+  'path' => '/rate',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003654s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jyxt_admin` [ RunTime:0.001736s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jyxt_admin` WHERE  `token` = 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9'  AND `status` = 1 LIMIT 1 [ RunTime:0.000469s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000691s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SELECT `auth`,`id` FROM `jyxt_admin` WHERE  `token` = 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9' LIMIT 1 [ RunTime:0.000616s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001016s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jyxt_params` [ RunTime:0.003208s ]
+[ sql ] [ SQL ] SELECT `c_tb_rate`,`c_tb_money`,`c_overnight_rate`,`c_spread`,`c_profit_rate`,`c_loss_rate`,`c_open_rate`,`c_close_rate` FROM `jyxt_params` WHERE  ( id=1 ) LIMIT 1 [ RunTime:0.003019s ]
+---------------------------------------------------------------
+[2021-03-28T14:36:12+08:00] 127.0.0.1 GET localhost:7025/Text/getText?token=e1d17c6336b7e4d997fd4b0aa31d371a426d97c9&path=%2FwebAgentApply&type=shangjiashenqing
+[运行时间：0.046008s] [吞吐率：21.74req/s] [内存消耗：919.91kb] [文件加载：68]
+[ info ] [ LANG ] /Source/70384jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'Text/getText',
+  'route' => 'admin/Text/getText',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://123.57.6.75/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://123.57.6.75',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'accept' => 'application/json, text/plain, */*',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'connection' => 'keep-alive',
+  'host' => 'localhost:7025',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9',
+  'path' => '/webAgentApply',
+  'type' => 'shangjiashenqing',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001129s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jyxt_admin` [ RunTime:0.006291s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jyxt_admin` WHERE  `token` = 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9'  AND `status` = 1 LIMIT 1 [ RunTime:0.000860s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001594s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SELECT `auth`,`id` FROM `jyxt_admin` WHERE  `token` = 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9' LIMIT 1 [ RunTime:0.007828s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000654s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jyxt_text` [ RunTime:0.007565s ]
+[ sql ] [ SQL ] SELECT * FROM `jyxt_text` WHERE  `type` = 'shangjiashenqing' [ RunTime:0.011156s ]
+---------------------------------------------------------------
+[2021-03-28T14:36:14+08:00] 127.0.0.1 GET localhost:7025/Text/getText?token=e1d17c6336b7e4d997fd4b0aa31d371a426d97c9&path=%2FwebXY&type=yonghuxieyi
+[运行时间：0.031563s] [吞吐率：31.68req/s] [内存消耗：1,015.70kb] [文件加载：68]
+[ info ] [ LANG ] /Source/70384jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'Text/getText',
+  'route' => 'admin/Text/getText',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://123.57.6.75/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://123.57.6.75',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'accept' => 'application/json, text/plain, */*',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'connection' => 'keep-alive',
+  'host' => 'localhost:7025',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9',
+  'path' => '/webXY',
+  'type' => 'yonghuxieyi',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002471s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jyxt_admin` [ RunTime:0.001645s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jyxt_admin` WHERE  `token` = 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9'  AND `status` = 1 LIMIT 1 [ RunTime:0.006720s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000628s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SELECT `auth`,`id` FROM `jyxt_admin` WHERE  `token` = 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9' LIMIT 1 [ RunTime:0.008789s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001439s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jyxt_text` [ RunTime:0.003150s ]
+[ sql ] [ SQL ] SELECT * FROM `jyxt_text` WHERE  `type` = 'yonghuxieyi' [ RunTime:0.001340s ]
+---------------------------------------------------------------
+[2021-03-28T14:36:15+08:00] 127.0.0.1 GET localhost:7025/Text/getText?token=e1d17c6336b7e4d997fd4b0aa31d371a426d97c9&path=%2FwebFL&type=falvshenming
+[运行时间：0.027067s] [吞吐率：36.95req/s] [内存消耗：935.70kb] [文件加载：68]
+[ info ] [ LANG ] /Source/70384jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'Text/getText',
+  'route' => 'admin/Text/getText',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://123.57.6.75/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://123.57.6.75',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'accept' => 'application/json, text/plain, */*',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'connection' => 'keep-alive',
+  'host' => 'localhost:7025',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9',
+  'path' => '/webFL',
+  'type' => 'falvshenming',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000849s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jyxt_admin` [ RunTime:0.002212s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jyxt_admin` WHERE  `token` = 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9'  AND `status` = 1 LIMIT 1 [ RunTime:0.004513s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001412s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SELECT `auth`,`id` FROM `jyxt_admin` WHERE  `token` = 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9' LIMIT 1 [ RunTime:0.000763s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001452s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jyxt_text` [ RunTime:0.004973s ]
+[ sql ] [ SQL ] SELECT * FROM `jyxt_text` WHERE  `type` = 'falvshenming' [ RunTime:0.000788s ]
+---------------------------------------------------------------
+[2021-03-28T14:36:16+08:00] 127.0.0.1 GET localhost:7025/Text/getText?token=e1d17c6336b7e4d997fd4b0aa31d371a426d97c9&path=%2FwebXY&type=yonghuxieyi
+[运行时间：0.014772s] [吞吐率：67.69req/s] [内存消耗：1,015.70kb] [文件加载：68]
+[ info ] [ LANG ] /Source/70384jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'Text/getText',
+  'route' => 'admin/Text/getText',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://123.57.6.75/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://123.57.6.75',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'accept' => 'application/json, text/plain, */*',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'connection' => 'keep-alive',
+  'host' => 'localhost:7025',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9',
+  'path' => '/webXY',
+  'type' => 'yonghuxieyi',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000800s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jyxt_admin` [ RunTime:0.001491s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jyxt_admin` WHERE  `token` = 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9'  AND `status` = 1 LIMIT 1 [ RunTime:0.000509s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001958s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SELECT `auth`,`id` FROM `jyxt_admin` WHERE  `token` = 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9' LIMIT 1 [ RunTime:0.000655s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000994s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jyxt_text` [ RunTime:0.002119s ]
+[ sql ] [ SQL ] SELECT * FROM `jyxt_text` WHERE  `type` = 'yonghuxieyi' [ RunTime:0.000678s ]
+---------------------------------------------------------------
+[2021-03-28T14:36:28+08:00] 127.0.0.1 GET localhost:7025/User/getUserOrderList?token=e1d17c6336b7e4d997fd4b0aa31d371a426d97c9&path=%2ForderManage&page=1&limit=10&phone=&currency=&type=1
+[运行时间：0.040667s] [吞吐率：24.59req/s] [内存消耗：1,016.57kb] [文件加载：68]
+[ info ] [ LANG ] /Source/70384jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'User/getUserOrderList',
+  'route' => 'admin/user/getUserOrderList',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://123.57.6.75/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://123.57.6.75',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'accept' => 'application/json, text/plain, */*',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'connection' => 'keep-alive',
+  'host' => 'localhost:7025',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9',
+  'path' => '/orderManage',
+  'page' => '1',
+  'limit' => '10',
+  'phone' => '',
+  'currency' => '',
+  'type' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000726s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jyxt_admin` [ RunTime:0.001519s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jyxt_admin` WHERE  `token` = 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9'  AND `status` = 1 LIMIT 1 [ RunTime:0.002874s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003349s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SELECT `auth`,`id` FROM `jyxt_admin` WHERE  `token` = 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9' LIMIT 1 [ RunTime:0.000826s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000817s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.* , IFNULL(b.phone,b.email) phone
+				from jyxt_user_deal a
+				LEFT JOIN jyxt_user b on b.id = a.user_id 
+				where 1=1 
+				and a.deal_type = '1' [ RunTime:0.020452s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000745s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] select a.* , IFNULL(b.phone,b.email) phone
+				from jyxt_user_deal a
+				LEFT JOIN jyxt_user b on b.id = a.user_id 
+				where 1=1 
+				and a.deal_type = '1' order by a.id desc limit '0', '10' [ RunTime:0.001716s ]
+---------------------------------------------------------------
+[2021-03-28T14:36:28+08:00] 127.0.0.1 GET localhost:7025/web/getCurrency?token=e1d17c6336b7e4d997fd4b0aa31d371a426d97c9&path=%2ForderManage&id=1
+[运行时间：0.064629s] [吞吐率：15.47req/s] [内存消耗：831.37kb] [文件加载：68]
+[ info ] [ LANG ] /Source/70384jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'web/getCurrency',
+  'route' => 'index/asset/getCurrency',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://123.57.6.75/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://123.57.6.75',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'accept' => 'application/json, text/plain, */*',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'connection' => 'keep-alive',
+  'host' => 'localhost:7025',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9',
+  'path' => '/orderManage',
+  'id' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002073s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jyxt_currency` [ RunTime:0.002092s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`symbol` FROM `jyxt_currency` WHERE  `type` = '1'  AND `status` = 0 [ RunTime:0.020984s ]
+---------------------------------------------------------------
+[2021-03-28T14:36:29+08:00] 127.0.0.1 GET localhost:7025/User/getCurrency?token=e1d17c6336b7e4d997fd4b0aa31d371a426d97c9&path=%2FbbSetting&type=1
+[运行时间：0.029780s] [吞吐率：33.58req/s] [内存消耗：928.80kb] [文件加载：68]
+[ info ] [ LANG ] /Source/70384jyxt/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'rule' => 'User/getCurrency',
+  'route' => 'admin/user/getCurrency',
+  'option' => 
+  array (
+    'merge_rule_regex' => false,
+    'method' => 'get',
+  ),
+  'var' => 
+  array (
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9,en;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://123.57.6.75/',
+  'sec-fetch-dest' => 'empty',
+  'sec-fetch-mode' => 'cors',
+  'sec-fetch-site' => 'cross-site',
+  'origin' => 'http://123.57.6.75',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.90 Safari/537.36',
+  'sec-ch-ua-mobile' => '?0',
+  'accept' => 'application/json, text/plain, */*',
+  'sec-ch-ua' => '"Google Chrome";v="89", "Chromium";v="89", ";Not A Brand";v="99"',
+  'connection' => 'keep-alive',
+  'host' => 'localhost:7025',
+  'content-type' => '',
+  'content-length' => '',
+)
+[ info ] [ PARAM ] array (
+  'token' => 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9',
+  'path' => '/bbSetting',
+  'type' => '1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002642s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jyxt_admin` [ RunTime:0.004276s ]
+[ sql ] [ SQL ] SELECT `id` FROM `jyxt_admin` WHERE  `token` = 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9'  AND `status` = 1 LIMIT 1 [ RunTime:0.000518s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000623s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SELECT `auth`,`id` FROM `jyxt_admin` WHERE  `token` = 'e1d17c6336b7e4d997fd4b0aa31d371a426d97c9' LIMIT 1 [ RunTime:0.000939s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000655s ] mysql:host=127.0.0.1;dbname=jyxt;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `jyxt_currency` [ RunTime:0.004086s ]
+[ sql ] [ SQL ] SELECT * FROM `jyxt_currency` WHERE  `type` = '1' [ RunTime:0.005665s ]
